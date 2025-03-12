@@ -12,12 +12,9 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+ 
 
 
-Route::get('/ice', function () {
+Route::get('/sam-ice-creem-truck', function () {
     return view('index');
 });
