@@ -909,8 +909,8 @@ button,
 .contact_section {
     width: 100%;
     float: left;
-    background-color: #eae3e37b;
-    height: auto;
+    background: linear-gradient(135deg, #ff69b4a1, #87ceeb);
+     height: auto;
     padding: 90px 0px;
 }
 
@@ -1041,7 +1041,7 @@ textarea#comment::placeholder {
     width: 100%;
     float: right;
     padding-top: 20px;
-    text-align: right;
+    text-align: center;
 }
 
 .footer_social_icon ul {
@@ -1144,7 +1144,8 @@ textarea#comment.update_mail::placeholder {
 .copyright_section {
     width: 100%;
     float: left;
-    background-color: #262526;
+    background-color: #000000;
+    
     height: auto;
 }
 
@@ -1172,4 +1173,28 @@ textarea#comment.update_mail::placeholder {
 
 .margin_top90 {
     margin-top: 90px;
+}
+
+
+
+.map-container {
+    position: relative;
+    width: 100%;
+        padding-top: 66.25%;
+    /* نسبة العرض إلى الارتفاع 16:9 */
+    border-radius: 15px;
+    /* زوايا دائرية */
+    overflow: hidden;
+    /* منع التمرير غير المرغوب فيه */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* ظل خفيف */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }

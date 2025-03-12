@@ -97,9 +97,10 @@
                                 <div class="col-sm-6">
                                     <div class="banner_img">
                                        
-                                       
-                                        <div class="bordarsmal">
-                                       <img src="images/slid1.png" loading="lazy"></div>
+                                   <div class="bordarsmal">
+                                       <img src="images/side0212.png" loading="lazy">
+
+                                        </div>
 
                                         </div>
                                 </div>
@@ -136,10 +137,16 @@
                                     <div class="banner_img">
                                     
                                     
+    
                                         <div class="bordarsmal">
-                                       <img src="images/side0212.png" loading="lazy">
 
-                                        </div>
+
+                                       <img src="images/slid1.png" loading="lazy">
+                                    
+                                    
+                                    </div>
+
+                                   
                                     </div>
                                 </div>
                             </div>
@@ -366,22 +373,14 @@
                 <div class="col-md-4">
                     <div class="contact_main">
                         <h1 class="contact_taital">Contact Us</h1>
-                        <form action="/action_page.php">
-                            <div class="form-group">
-                                <input type="text" class="email-bt" placeholder="Name" name="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="email-bt" placeholder="Email" name="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="email-bt" placeholder="Phone Numbar" name="Email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
-                            </div>
-                        </form>
-                        <div class="main_bt"><a href="#">SEND</a></div>
-                    </div>
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="location_text">
@@ -428,8 +427,7 @@
     <!-- copyright section start -->
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html
-                    Templates</a> Distribution by <a href="https://themewagon.com">ThemeWagon</a></p>
+            <p class="copyright_text">2025 All Rights Reserved. © Development by <a href="https://github.com/Sami-AL-njadat"> SAM 95 NJT</a> </p>
         </div>
     </div>
 
