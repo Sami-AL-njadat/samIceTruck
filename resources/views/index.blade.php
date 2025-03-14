@@ -432,6 +432,7 @@
     </div>
 
 
+    @livewireScripts
 
     <!-- copyright section end -->
     <!-- Javascript files-->
