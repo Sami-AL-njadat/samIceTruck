@@ -437,7 +437,7 @@
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script src="{{asset('js/jquery.min.js')}}"></script>
-    <script src="{{asset('js/popper.min.js')}}"></script>
+    {{-- <script src="{{asset('js/popper.min.js')}}"></script> --}}
     <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
     <script src="{{asset('js/plugin.js')}}"></script>
