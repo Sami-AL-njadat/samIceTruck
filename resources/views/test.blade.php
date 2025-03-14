@@ -78,7 +78,7 @@
                <div class="row">
                   <div class="col-md-12">
                      <div class="testimonial_box">
-                        <div id="main_slider" class="carousel slide" data-ride="carousel">
+                        <div id="main_slideroo" class="carousel slide" data-ride="carousel">
                            <div class="carousel-inner">
                               <div class="carousel-item active">
                                  <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua...</p>
@@ -91,10 +91,10 @@
                                  <div class="client_img"><img src="images/client-img.png"></div>
                               </div>
                            </div>
-                           <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+                           <a class="carousel-control-prev" href="#main_slideroo" role="button" data-slide="prev">
                            <i class="fa fa-angle-left"></i>
                            </a>
-                           <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+                           <a class="carousel-control-next" href="#main_slideroo" role="button" data-slide="next">
                            <i class="fa fa-angle-right"></i>
                            </a>
                         </div>
