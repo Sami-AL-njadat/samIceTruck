@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- mobile metas -->
-    {{-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1"> --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
     <title>ٍSam IceCreem Truck</title>
     <meta name="keywords" content="">
@@ -432,14 +432,13 @@
     </div>
 
 
-    @livewireScripts
 
     <!-- copyright section end -->
     <!-- Javascript files-->
     <script src="{{asset('js/jquery.min.js')}}"></script>
-    {{-- <script src="{{asset('js/popper.min.js')}}"></script> --}}
-    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{asset('js/plugin.js')}}"></script>
     <!-- sidebar -->
     <script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
