@@ -10,23 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
-    <title>Sam iceCreem Truck</title>
+    <title>ٍSam IceCreem Truck</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
-    
     <!-- bootstrap css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
     <!-- style css -->
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <!-- Responsive-->
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
+    <link rel="stylesheet" href="{{asset('css/responsive.css')}}">
     <!-- fevicon -->
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
     <!-- font css -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{asset('css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 
@@ -75,7 +74,7 @@
         </div>
 
 
-
+ 
         <!-- banner section start -->
         <div class="banner_section layout_padding">
             <div class="container">
@@ -97,13 +96,13 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
-
-                                        <div class="bordarsmal">
-                                            <img src="images/side0212.png" loading="lazy">
+                                       
+                                   <div class="bordarsmal">
+                                       <img src="images/side0212.png" loading="lazy">
 
                                         </div>
 
-                                    </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -117,13 +116,12 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
-
+                                       
                                         <div class="bordarsmal">
-                                            <img src="images/side7.png" loading="lazy">
+                                       <img src="images/side7.png" loading="lazy"></div>
+
                                         </div>
-
-                                    </div>
-
+                                       
                                 </div>
                             </div>
                         </div>
@@ -137,18 +135,18 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
-
-
-
+                                    
+                                    
+    
                                         <div class="bordarsmal">
 
 
-                                            <img src="images/slid1.png" loading="lazy">
+                                       <img src="images/slid1.png" loading="lazy">
+                                    
+                                    
+                                    </div>
 
-
-                                        </div>
-
-
+                                   
                                     </div>
                                 </div>
                             </div>
@@ -260,7 +258,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+         </div>
     </div>
     <!-- cream sectuion end -->
 
@@ -328,7 +326,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="images/client-img.png" loading="lazy">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -338,7 +336,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="images/client-img.png" loading="lazy">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -348,7 +346,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="images/client-img.png" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
@@ -375,13 +373,14 @@
                 <div class="col-md-4">
                     <div class="contact_main">
                         <h1 class="contact_taital">Contact Us</h1>
-                        <div class="map-container">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                    </div>
+<div class="map-container">
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="location_text">
@@ -428,8 +427,7 @@
     <!-- copyright section start -->
     <div class="copyright_section">
         <div class="container">
-            <p class="copyright_text">2025 All Rights Reserved. © Development by <a
-                    href="https://github.com/Sami-AL-njadat"> SAM 95 NJT</a> </p>
+            <p class="copyright_text">2025 All Rights Reserved. © Development by <a href="https://github.com/Sami-AL-njadat"> SAM 95 NJT</a> </p>
         </div>
     </div>
 
@@ -437,24 +435,15 @@
 
     <!-- copyright section end -->
     <!-- Javascript files-->
-    {{-- <script src="{{ asset('js/jquery.min.js') }}"></script> --}}
-    <script src="{{ asset('js/popper.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>
-    <script src="{{ asset('js/plugin.js') }}"></script>
+    <script src="{{asset('js/jquery.min.js')}}"></script>
+    <script src="{{asset('js/popper.min.js')}}"></script>
+    <script src="{{asset('js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    <script src="{{asset('js/plugin.js')}}"></script>
     <!-- sidebar -->
-    <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{asset('js/jquery.mCustomScrollbar.concat.min.js')}}"></script>
+    <script src="{{asset('js/custom.js')}}"></script>
     <!-- javascript -->
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-
-
-    
 
     <script>
         var preloader = document.getElementById("preloader");
@@ -462,7 +451,6 @@
             preloader.style.display = "none"
         })
     </script>
-    @livewireScripts
 </body>
 
 </html>
