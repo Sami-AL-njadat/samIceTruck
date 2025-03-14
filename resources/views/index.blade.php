@@ -451,6 +451,14 @@
 
 
 
+<script>
+    $(document).ready(function(){
+        $('#main_slider').carousel({
+            interval: 3000,  // لتحديد وقت الانتقال بين الشرائح (بالميلي ثانية)
+            pause: 'hover'   // يتوقف التمرير عند وضع المؤشر على الكاروسيل
+        });
+    });
+</script>
 
 
     <script>
