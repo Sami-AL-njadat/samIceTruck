@@ -20,4 +20,8 @@ Route::get('/sam-ice-creem-truck', function () {
 });
 
 
+
+Route::get('/ww', function () {
+    return view('sami');
+});
  
