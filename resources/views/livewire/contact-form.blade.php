@@ -55,16 +55,24 @@
                                <textarea id="message" wire:model="message" class="email-bt" placeholder="Message"></textarea>
 
                            </div>
-                           <div>    
+                           <div>
                                @error('message')
                                    <span class="text-danger">{{ $message }}</span>
                                @enderror
                            </div>
 
-                           <div class="main_bt">
-                               <button class="btn-submit" type="submit">submit</button>
+                    
 
+
+                           <div class="main_bt">
+                               <button class="btn-submit" type="submit" wire:loading.attr="disabled">
+                                   Submit
+        <img  src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
+                                       class="loading-spinner">
+                             
+                               </button>
                            </div>
+
 
                        </form>
                    </div>

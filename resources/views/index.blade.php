@@ -277,24 +277,24 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"
-                                        loading="lazy"></span>Cookies Ice Cream</h5>
+                            <h5 class="tasty_text"><span class="icon_img"><img src="{{asset('images/icon-1.png')}}"
+                                       ></span>Cookies Ice Cream</h5>
                             <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
                                 voluptate velit esse cillum dolore eu fat </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-2.png"
-                                        loading="lazy"></span>Cookies Ice Cream</h5>
+                            <h5 class="tasty_text"><span class="icon_img"><img src="{{asset('images/icon-2.png')}}"
+                                         ></span>Cookies Ice Cream</h5>
                             <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
                                 voluptate velit esse cillum dolore eu fat </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img src="images/icon-1.png"
-                                        loading="lazy"></span>Cookies Ice Cream</h5>
+                            <h5 class="tasty_text"><span class="icon_img"><img src="{{asset('images/icon-1.png')}}"
+                                        ></span>Cookies Ice Cream</h5>
                             <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
                                 voluptate velit esse cillum dolore eu fat </p>
                         </div>
