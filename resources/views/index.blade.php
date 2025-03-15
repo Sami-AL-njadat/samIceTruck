@@ -7,8 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    {{-- <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1"> --}}
     <!-- site metas -->
     <title>ٍSam IceCreem Truck</title>
     <meta name="keywords" content="">
@@ -60,7 +60,7 @@
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
@@ -195,13 +195,56 @@
                         aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                         cillum dolore euconsectetur adipiscing esequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu</p>
-                    <div class="read_bt_1"><a href="#">Read More</a></div>
+                    <div class="read_bt_1"><a href="#order">Order Now</a></div>
+ 
                 </div>
             </div>
         </div>
     </div>
     <!-- about sectuion end -->
+      <div class="services_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" id="services">
+                    <h1 class="services_taital">Our Ice Cream Services</h1>
+                    <p class="services_text">tempor incididunt ut labore et dolore magna aliqua</p>
+                </div>
+            </div>
+            <div class="services_section_2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
+                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fat </p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/icon-2.png') }}"></span>Cookies Ice Cream</h5>
+                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fat </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
+                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
+                                voluptate velit esse cillum dolore eu fat </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="seemore_bt"><a href="#order">Order Now</a></div>
+        </div>
+    </div>
     <!-- cream sectuion start -->
+
     <div class="cream_section layout_padding">
         <div class="container" id="icecream">
             <div class="row">
@@ -267,45 +310,7 @@
     @livewire('contact-form')
 
     <!-- services section start -->
-    <div class="services_section layout_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="services_taital">Our Ice Cream Services</h1>
-                    <p class="services_text">tempor incididunt ut labore et dolore magna aliqua</p>
-                </div>
-            </div>
-            <div class="services_section_2">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-2.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="services_box">
-                            <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="seemore_bt"><a href="#">Read More</a></div>
-        </div>
-    </div>
+  
     <!-- services section end -->
     <!-- testimonial section start -->
     <div class="testimonial_section layout_padding">
@@ -377,7 +382,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="contact_main">
+                    <div class="contact_main" >
                         <h1 class="contact_taital">Contact Us</h1>
                         <div class="map-container">
                             <iframe

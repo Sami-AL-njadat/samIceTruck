@@ -1,12 +1,12 @@
    <div class="contact_sa  layout_padding">
        <div class="container">
            <div class="row">
-               <div class="col-md-6">
+               <div class="col-md-6" id="order">
                    <h1 class="about_taital">Contact Us</h1>
 
                    <p class="about_text">Please contact with us any times</p>
 
-                   <div class="contact_main">
+                   <div class="contact_main" >
                        @if (session()->has('success'))
                            <div class="alert alert-success">
                                {{ session('success') }}
