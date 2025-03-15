@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
     <!-- Tweaks for older IEs-->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 
     @livewireStyles
@@ -445,10 +444,9 @@
 
     <!-- copyright section end -->
     <!-- Javascript files-->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
-
-    {{-- <script src="{{ asset('js/jquery.min.js') }}"></script> --}}
-    {{-- <script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>   --}}
+ 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('js/plugin.js') }}"></script>
