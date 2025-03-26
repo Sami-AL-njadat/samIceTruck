@@ -36,6 +36,7 @@
 <body>
 
     <div id="preloader"></div>
+<button id="scrollTopBtn" title="Go to top">↑</button>
 
 
 
@@ -500,6 +501,7 @@
     <!-- Javascript files-->
 
     <script src="{{ asset('js/jquery.min.js') }}"></script>
+    <script src="{{ asset('js/scrolltop.js') }}"></script>
 
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
