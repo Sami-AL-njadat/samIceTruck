@@ -56,17 +56,18 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUs">About</a>
                         </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services">Services</a>
-                        </li>
+                    
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
+                            <a class="nav-link" href="#order">Contact Us</a>
                         </li>
                     </ul>
 
@@ -189,25 +190,28 @@
                     <div class="about_img"><img src="images/about-img.png" loading="lazy"></div>
                 </div>
                 <div class="col-md-6">
-                    <h1 class="about_taital">About Icecream</h1>
-                    <p class="about_text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore euconsectetur adipiscing esequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu</p>
+                    <h1 class="about_taital">About Sam Ice-Cream Truck</h1>
+                    <p class="about_text">At Sam's Ice Cream Truck, we're all about bringing smiles, one scoop at a
+                        time! Whether it's a wedding, birthday, school event, or fundraiser, we deliver delicious ice
+                        cream treats that make every moment sweeter. With our wide variety of flavors and friendly
+                        service, we’re dedicated to making your special events unforgettable.
+
+                        Ready to add some sweetness to your day? Order now and let the fun begin! 🍦🎉</p>
                     <div class="read_bt_1"><a href="#order">Order Now</a></div>
- 
+
                 </div>
             </div>
         </div>
     </div>
     <!-- about sectuion end -->
-      <div class="services_section layout_padding">
+    <div class="services_section layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12" id="services">
                     <h1 class="services_taital">Our Ice Cream Services</h1>
-                    <p class="services_text">tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p class="services_text">Sam Ice Cream Truck brings joy to every occasion! We provide delightful
+                        ice cream experiences for weddings, birthdays, school events, fundraisers, and more. Whatever
+                        the event, we’re here to make it sweeter! 🍦🎉</p>
                 </div>
             </div>
             <div class="services_section_2">
@@ -215,32 +219,77 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
+                                        src="{{ asset('images/marriage.png') }}"></span>Wedding Ice-Cream</h5>
+                            <p class="lorem_text">Add a Sweet Touch to Your Wedding!
+                                Let us bring a unique experience to your special day with our delicious Cookies Ice
+                                Cream, making your party even more fun and unforgettable. 🎉🍦 </p>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-2.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
+                                        src="{{ asset('images/Fundraising.png') }}"></span>fundraising Ice-Cream</h5>
+                            <p class="lorem_text">Sweeten Your Fundraiser with Ice Cream!
+                                Make your event unforgettable with our delicious ice cream. Every scoop brings smiles
+                                and supports your cause — a perfect way to raise funds while spreading joy! 🍦❤️ </p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/icon-1.png') }}"></span>Cookies Ice Cream</h5>
-                            <p class="lorem_text">commodo consequat. Duis aute irure dolor in reprehenderit in
-                                voluptate velit esse cillum dolore eu fat </p>
+                                        src="{{ asset('images/hosrital.png') }}"></span>Hospital Ice-Cream</h5>
+                            <p class="lorem_text">Bringing Smiles with Every Scoop!
+                                Treat patients, staff, and visitors to a delightful ice cream experience. A little
+                                sweetness can brighten any day — because everyone deserves a moment of joy. 🍦😊</p>
                         </div>
                     </div>
                 </div>
-                
+
             </div>
+
+
+            <div class="services_section_2">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/pivateEvents.png') }}"></span>Private Event Ice-Cream
+                            </h5>
+                            <p class="lorem_text">Make Your Private Event Unforgettable!
+                                Add a sweet touch to your special gatherings with our delicious Ice Cream. Perfect for
+                                anniversaries, or any celebration — because every moment deserves a tasty treat! 🍪🍦🎉
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/school.png') }}"></span>School Ice-Cream</h5>
+                            <p class="lorem_text">
+                                Cool Treats for Cool Kids!
+                                Bring excitement to your school events with our delicious ice cream. Perfect for
+                                parties, fundraisers, and special occasions — because happy students make the best
+                                memories! 🍦🎒🎉</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="services_box">
+                            <h5 class="tasty_text"><span class="icon_img"><img
+                                        src="{{ asset('images/birthday.png') }}"></span>Birthday Ice-Cream</h5>
+                            <p class="lorem_text">Celebrate Your Birthday with a Sweet Surprise!
+                                Make your special day unforgettable with our delicious ice cream. Perfect for kids and
+                                adults alike — because every birthday deserves a tasty treat! 🎂🍦🎉</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
             <div class="seemore_bt"><a href="#order">Order Now</a></div>
+
         </div>
     </div>
     <!-- cream sectuion start -->
@@ -310,7 +359,7 @@
     @livewire('contact-form')
 
     <!-- services section start -->
-  
+
     <!-- services section end -->
     <!-- testimonial section start -->
     <div class="testimonial_section layout_padding">
@@ -333,7 +382,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -343,7 +392,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -353,7 +402,7 @@
                                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
                                         </p>
                                         <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{asset('images/client-img.png')}}" >
+                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
                                         </div>
                                     </div>
                                 </div>
@@ -373,7 +422,7 @@
         </div>
     </div>
     <!-- testimonial section end -->
- 
+
 
 
 
@@ -382,7 +431,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="contact_main" >
+                    <div class="contact_main">
                         <h1 class="contact_taital">Contact Us</h1>
                         <div class="map-container">
                             <iframe
@@ -449,12 +498,12 @@
 
     <!-- copyright section end -->
     <!-- Javascript files-->
- 
-      <script src="{{asset('js/jquery.min.js')}}"></script>
- 
+
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
+
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.bundle.min.js') }}"></script>
-          <script src="{{asset('js/jquery-3.0.0.min.js')}}"></script>
+    <script src="{{ asset('js/jquery-3.0.0.min.js') }}"></script>
 
     <script src="{{ asset('js/plugin.js') }}"></script>
     <!-- sidebar -->
