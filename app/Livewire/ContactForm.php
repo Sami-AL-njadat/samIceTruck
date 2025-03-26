@@ -23,7 +23,7 @@ class ContactForm extends Component
         $this->validate();
 
         // إرسال البريد
-        Mail::to('saminjadat@gmail.com')->send(new ContactMail($this->name, $this->email, $this->phone, $this->message));
+        Mail::to('samicecream52@gmail.com')->send(new ContactMail($this->name, $this->email, $this->phone, $this->message));
 
         $this->reset();
 

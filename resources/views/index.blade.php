@@ -459,7 +459,7 @@
                             <li>
                                 <a href="#">
                                     <span class="padding_left_10"><i class="fa fa-envelope"
-                                            aria-hidden="true"></i></span>Email : demo@gmail.com
+                                            aria-hidden="true"></i></span>Email : samicecream52@gmail.com
                                 </a>
                             </li>
                         </ul>
