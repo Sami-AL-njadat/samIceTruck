@@ -14,7 +14,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
-     <script src="{{ asset('js/jquery.min.js') }}"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <!-- jQuery (Load First) -->
   
