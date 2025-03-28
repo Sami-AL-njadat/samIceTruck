@@ -14,13 +14,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
+     <script src="{{ asset('js/jquery.min.js') }}"></script>
 
     <!-- jQuery (Load First) -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-            integrity="sha384-rp6DhsbVcBQ1kqf3hEXHITDm8/hvbvLOos7MC9n8+J7/JZ9VnC2XmgfoAvjqR9wR" 
-            crossorigin="anonymous"></script>
+  
   </head>
   <body>
 
