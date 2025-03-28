@@ -14,13 +14,10 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="icon" href="images/fevicon.png" type="image/gif" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-   <script src="{{ asset('js/jquery.min.js') }}"></script>
-
-    <!-- jQuery (Load First) -->
-  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="{{ asset('js/jquery.min.js') }}"></script>
   </head>
   <body>
 
@@ -75,6 +72,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
             crossorigin="anonymous"></script>
-
+            
+    <!-- Add touch support -->
+    <script>
+    $(document).ready(function(){
+        // Enable touch swipe support for carousel
+        $(".carousel").on("touchstart", function(event){
+            var xClick = event.originalEvent.touches[0].pageX;
+            $(this).one("touchmove", function(event){
+                var xMove = event.originalEvent.touches[0].pageX;
+                if( Math.floor(xClick - xMove) > 5 ){
+                    $(this).carousel('next');
+                }
+                else if( Math.floor(xClick - xMove) < -5 ){
+                    $(this).carousel('prev');
+                }
+            });
+            $(".carousel").on("touchend", function(){
+                $(this).off("touchmove");
+            });
+        });
+    });
+    </script>
   </body>
 </html>
