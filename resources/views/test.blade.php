@@ -1,24 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <!-- Your CSS files -->
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="images/fevicon.png" type="image/gif">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- jQuery with fallback -->
     <script src="{{ asset('js/jquery.min.js') }}"></script>
-  </head>
+    <script>
+        if (typeof jQuery == 'undefined') {
+            document.write('<script src="https://code.jquery.com/jquery-3.6.0.min.js"><\/script>');
+        }
+    </script>
+    
+    <!-- Verify jQuery loaded -->
+    <script>
+        $(document).ready(function() {
+            console.log("jQuery version:", $.fn.jquery);
+            // Your other jQuery code here
+        });
+    </script>
+</head>
   <body>
 
     <div class="testimonial_section layout_padding">
@@ -72,27 +83,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
             crossorigin="anonymous"></script>
-            
-    <!-- Add touch support -->
-    <script>
-    $(document).ready(function(){
-        // Enable touch swipe support for carousel
-        $(".carousel").on("touchstart", function(event){
-            var xClick = event.originalEvent.touches[0].pageX;
-            $(this).one("touchmove", function(event){
-                var xMove = event.originalEvent.touches[0].pageX;
-                if( Math.floor(xClick - xMove) > 5 ){
-                    $(this).carousel('next');
-                }
-                else if( Math.floor(xClick - xMove) < -5 ){
-                    $(this).carousel('prev');
-                }
-            });
-            $(".carousel").on("touchend", function(){
-                $(this).off("touchmove");
-            });
-        });
-    });
-    </script>
+
   </body>
 </html>
