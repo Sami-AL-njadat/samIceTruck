@@ -39,20 +39,17 @@
                                 </div>
                             </div>
                             <!-- Carousel Controls -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#main_slider"
+                  
+
+
+                                    <a class="carousel-control-prev"  data-bs-target="#main_slider" role="button"
                                 data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden"> <i class="fa fa-angle-left"></i>
-                                </span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#main_slider"
+                                    <i class="fa fa-angle-left"></i>
+                                </a>
+                                <a class="carousel-control-next" data-bs-target="#main_slider" role="button"
                                 data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden"> <i class="fa fa-angle-right"></i>
-                                </span>
-                            </button>
-
-
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
 
                         </div>
                     </div>
