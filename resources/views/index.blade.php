@@ -76,7 +76,7 @@
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#location">Location</a>
+                            <a class="nav-link" href="#ellocation">Location</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#order">Contact Us</a>
@@ -498,7 +498,7 @@
             <div class="testimonial_section_2">
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="testimonial_box" id="location">
+                        <div class="testimonial_box" id="ellocation">
                             <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
