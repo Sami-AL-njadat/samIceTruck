@@ -61,7 +61,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto">
+                    <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ url('/sam-ice-creem-truck') }}">Home</a>
                         </li>
@@ -381,14 +381,14 @@
     <div class="testimonial_section layout_padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-12" id="ellocation">
                     <h1 class="testimonial_taital">Our Location</h1>
                 </div>
             </div>
             <div class="testimonial_section_2">
                 <div class="row">
-                    <div class="col-md-12">
-                        <div class="testimonial_box" id="ellocation">
+                    <div class="col-md-12" >
+                        <div class="testimonial_box" >
                             <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
