@@ -367,20 +367,22 @@
     <!-- services section start -->
 
     <!-- services section end -->
+
+            @include('testimonial')
+
     <!-- testimonial section start -->
-    <div class="testimonial_section layout_padding">
+    {{-- <div class="testimonial_section layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="testimonial_taital">Testimonial</h1>
                 </div>
             </div>
-            
             <div class="testimonial_section_2">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="testimonial_box">
-                            <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
+                            <div id="main_slider" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
@@ -427,7 +429,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- testimonial section end -->
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
