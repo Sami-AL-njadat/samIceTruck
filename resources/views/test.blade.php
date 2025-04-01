@@ -48,17 +48,19 @@
 
 
     <div class="header_section">
+
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand"href="{{ url('/sam-ice-creem-truck') }}"><img style="width: 71px; height: 89px;"
-                        src="images/logo2.png"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="{{ url('/sam-ice-creem-truck') }}">
+                    <img style="width: 71px; height: 89px;" src="images/logo2.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ url('/sam-ice-creem-truck') }}">Home</a>
                         </li>
@@ -71,7 +73,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
@@ -79,7 +80,6 @@
                             <a class="nav-link" href="#order">Contact Us</a>
                         </li>
                     </ul>
-
                 </div>
             </nav>
         </div>
@@ -106,7 +106,8 @@
                                         and Batavia! Perfect for birthdays, corporate events, school gatherings, and
                                         neighborhood fun 🚚🍦.</p>
 
-                                    <h2 class="mt-2">TEL: <a style="color: blue" href="tel:+17087458108">+1 (708) 7458108</a></h2>
+                                    <h2 class="mt-2">TEL: <a style="color: blue" href="tel:+17087458108">+1 (708)
+                                            7458108</a></h2>
 
                                 </div>
                                 <div class="col-sm-6">
@@ -389,7 +390,7 @@
                                     <div class="carousel-item active">
                                         <p class="testimonial_text">St. Charles chicago
                                         </p>
-                                        <h4 class="client_name">St. Charles chicago  </h4>
+                                        <h4 class="client_name">St. Charles chicago </h4>
                                         <div class="client_img">
                                             <img src="{{ asset('images/logo.png') }}"
                                                 style="width: 203px ; height: 170px;" alt="Client Image">
@@ -476,7 +477,7 @@
                             </li>
                         </ul>
                     </div>
-               
+
                     <div class="footer_social_icon">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -485,10 +486,9 @@
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                      <div class="footer_social_icon about_img">
-                  <img style="width: 100px; height: 100px;"
-                        src="images/logo2.png">
-                    </div> 
+                    <div class="footer_social_icon about_img">
+                        <img style="width: 100px; height: 100px;" src="images/logo2.png">
+                    </div>
                 </div>
             </div>
         </div>
