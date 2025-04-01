@@ -319,7 +319,7 @@
                                     <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <h4 class="client_name">Marri Fen</h4>
                                     <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
+                                        <img src="{{ asset('images/logo.png') }}" alt="Client Image">
                                     </div>
                                 </div>
                                 <div class="carousel-item">
