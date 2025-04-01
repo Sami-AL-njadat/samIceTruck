@@ -299,64 +299,6 @@
         </div>
     </div>
     <!-- cream sectuion start -->
-    {{-- /////ascas --}}
-
-    <!-- Testimonial Section -->
-<div class="testimonial_section layout_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="testimonial_taital">Testimonial</h1>
-            </div>
-        </div>
-        <div class="testimonial_section_2">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial_box">
-                        <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                    <h4 class="client_name">Marri Fen</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="testimonial_text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <h4 class="client_name">John Doe</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="testimonial_text">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-                                    <h4 class="client_name">Jane Smith</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Carousel Controls -->
-                            <button class="carousel-control-prev" type="button" data-bs-target="#main_slider" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#main_slider" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-    {{-- /////ascas --}}
 
     <div class="cream_section layout_padding">
         <div class="container" id="icecream">
@@ -433,11 +375,12 @@
                     <h1 class="testimonial_taital">Testimonial</h1>
                 </div>
             </div>
+            
             <div class="testimonial_section_2">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="testimonial_box">
-                            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                            <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
@@ -487,7 +430,8 @@
     </div>
     <!-- testimonial section end -->
 
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- contact section start -->
