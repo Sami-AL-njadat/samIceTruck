@@ -319,7 +319,7 @@
                                     <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                                     <h4 class="client_name">Marri Fen</h4>
                                     <div class="client_img">
-                                        <img src="{{ asset('images/logo.png') }}" alt="Client Image">
+                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -354,9 +354,7 @@
     </div>
 </div>
 
-<!-- Ensure jQuery and Bootstrap JS are loaded -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 
     {{-- /////ascas --}}
 
