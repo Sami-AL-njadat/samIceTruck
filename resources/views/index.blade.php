@@ -49,8 +49,7 @@
 
     <div class="header_section">
       
-    <div class="header_section">
-
+ 
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="{{ url('/sam-ice-creem-truck') }}">
@@ -88,116 +87,7 @@
 
 
 
-
-        <!-- banner section start2 -->
-        <div class="banner_section layout_padding">
-            <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">01</li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">02</li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">03</li>
-                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3">04</li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h1 class="banner_taital">Best Ice Cream Truck in Chicago & Suburbs</h1>
-                                    <p class="banner_text">Enjoy our ice cream truck in Chicago, Wheaton, St. Charles,
-                                        and Batavia! Perfect for birthdays, corporate events, school gatherings, and
-                                        neighborhood fun 🚚🍦.</p>
-
-                                    <h2 class="mt-2">TEL: <a style="color: blue" href="tel:+17087458108">+1 (708)
-                                            7458108</a></h2>
-
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="banner_img">
-
-                                        <div class="bordarsmal">
-                                            <img src="images/side0212.png" loading="lazy">
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h1 class="banner_taital">Chicago IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="banner_img">
-
-                                        <div class="bordarsmal">
-                                            <img src="images/side7.png" loading="lazy">
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h1 class="banner_taital">Chicago’s Favorite Ice Cream Truck</h1>
-                                    <p class="banner_text">Serving delicious frozen treats on wheels! Find us in
-                                        Chicago, Wheaton, St. Charles, and Batavia for parties, events, and everyday
-                                        sweet cravings.</p>
-
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="banner_img">
-
-
-
-                                        <div class="bordarsmal">
-
-
-                                            <img src="images/slid1.png" loading="lazy">
-
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <h1 class="banner_taital">IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="banner_img">
-
-                                        <div class="bordarsmal">
-                                            <img src="images/side4.png" loading="lazy">
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- banner section end2 -->
-    </div>
+ 
 
 
 
