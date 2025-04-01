@@ -6,21 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery (Required for Bootstrap 4 JavaScript features) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <!-- Popper.js (Required for Bootstrap tooltips, popovers, etc.) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>    
     <!-- Your CSS files -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <link rel="icon" href="images/fevicon.png" type="image/gif">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     
-    <!-- jQuery with fallback -->
-    <script src="{{ asset('js/jquery.min.js') }}"></script>
-    <script>
-        if (typeof jQuery == 'undefined') {
-            document.write('<script src="https://code.jquery.com/jquery-3.6.0.min.js"><\/script>');
-        }
-    </script>
+  
     
     <!-- Verify jQuery loaded -->
     <script>

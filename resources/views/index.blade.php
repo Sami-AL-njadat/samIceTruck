@@ -10,10 +10,13 @@
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1"> --}}
     <!-- site metas -->
+
+    
     <title>ٍSam IceCreem Truck</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
+ <meta name="keywords" content="Chicago ice cream, Ice cream truck, Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
+<meta name="description" content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.">
+
+    <meta name="author" content="sami alnjadat ">
     <!-- bootstrap css -->
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
     <!-- style css -->
@@ -21,7 +24,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
     <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <link rel="icon" href="images/logo2.png" type="images/logo2.png" />
     <!-- font css -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
     <!-- Scrollbar Custom CSS -->
@@ -36,14 +39,17 @@
 <body>
 
     <div id="preloader"></div>
-<button id="scrollTopBtn" title="Go to top">↑</button>
+    <button id="scrollTopBtn" title="Go to top">↑</button>
 
 
 
     <div class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
+                <a class="navbar-brand"href="index.html"><img style="    width: 81px;    height: 100px;
+
+"
+                        src="images/logo2.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -57,13 +63,13 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUs">About</a>
                         </li>
-                            <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
-                    
+
                         <li class="nav-item">
                             <a class="nav-link" href="blog.html">Blog</a>
                         </li>
@@ -92,10 +98,8 @@
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h1 class="banner_taital">IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
+                                    <h1 class="banner_taital">Best Ice Cream in Chicago</h1>
+                                    <p class="banner_text">Delicious Ice Cream Trucks in Wheaton, St. Charles & Batavia</p>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
@@ -112,7 +116,7 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h1 class="banner_taital">IceCream Truck</h1>
+                                    <h1 class="banner_taital">Chicago IceCream Truck</h1>
                                     <p class="banner_text">It is a long established fact that a reader will be
                                         distracted by the readable content of a page when looking at its layout. The
                                         point of using Lorem</p>

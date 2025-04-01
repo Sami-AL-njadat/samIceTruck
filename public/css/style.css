@@ -386,8 +386,8 @@ button,
 }
 
 .banner_taital {
-    width: 30%;
-    font-size: 60px;
+    width: 75%;
+    font-size: 40px;
     color: #222222;
     font-weight: bold;
 }
@@ -545,6 +545,7 @@ button,
     background-size: 100%;
     background-repeat: no-repeat;
     bottom: 80px;
+    display: none;
 }
 
 .cream_section::before {
@@ -557,6 +558,7 @@ button,
     background-repeat: no-repeat;
     top: 180px;
     right: 0px;
+    display: none;
 }
 
 .cream_taital {
