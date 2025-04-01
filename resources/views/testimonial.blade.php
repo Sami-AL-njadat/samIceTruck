@@ -18,7 +18,7 @@
                                     </p>
                                     <h4 class="client_name">Marri Fen</h4>
                                     <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
+                                        <img src="{{ asset('images/logo.png') }}" alt="Client Image">
                                     </div>
                                 </div>
                                 <div class="carousel-item">
@@ -26,7 +26,7 @@
                                         magna aliqua.</p>
                                     <h4 class="client_name">John Doe</h4>
                                     <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
+                                        <img src="{{ asset('images/spinner.gif') }}" alt="Client Image">
                                     </div>
                                 </div>
                                 <div class="carousel-item">
