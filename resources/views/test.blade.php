@@ -7,31 +7,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- mobile metas -->
-    {{-- <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1"> --}}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
 
-    
+
     <title>ٍSam IceCreem Truck</title>
- <meta name="keywords" content="Chicago ice cream, Ice cream truck, Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
-<meta name="description" content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.">
+    <meta name="keywords"
+        content="Chicago ice cream, Ice cream truck, Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
+    <meta name="description"
+        content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.">
 
     <meta name="author" content="sami alnjadat ">
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- style css -->
+
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
     <!-- Responsive-->
     <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+
     <!-- fevicon -->
     <link rel="icon" href="images/logo2.png" type="images/logo2.png" />
-    <!-- font css -->
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <!-- Scrollbar Custom CSS -->
-    {{-- <link rel="stylesheet" href="{{ asset('css/jquery.mCustomScrollbar.min.css') }}"> --}}
-    <!-- Tweaks for older IEs-->
- 
+
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+
 
     @livewireStyles
 </head>
@@ -46,9 +50,7 @@
     <div class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand"href="index.html"><img style="    width: 81px;    height: 100px;
-
-"
+                <a class="navbar-brand"href="{{ url('/sam-ice-creem-truck') }}"><img style="width: 71px; height: 89px;"
                         src="images/logo2.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -58,7 +60,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="{{ url('/sam-ice-creem-truck') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUs">About</a>
@@ -84,22 +86,28 @@
 
 
 
-        <!-- banner section start -->
+
+        <!-- banner section start2 -->
         <div class="banner_section layout_padding">
             <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3">04</li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active">01</li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">02</li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">03</li>
+                        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3">04</li>
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h1 class="banner_taital">Best Ice Cream in Chicago</h1>
-                                    <p class="banner_text">Delicious Ice Cream Trucks in Wheaton, St. Charles & Batavia</p>
+                                    <h1 class="banner_taital">Best Ice Cream Truck in Chicago & Suburbs</h1>
+                                    <p class="banner_text">Enjoy our ice cream truck in Chicago, Wheaton, St. Charles,
+                                        and Batavia! Perfect for birthdays, corporate events, school gatherings, and
+                                        neighborhood fun 🚚🍦.</p>
+
+                                    <h2 class="mt-2">TEL: <a style="color: blue" href="tel:+17087458108">+1 (708) 7458108</a></h2>
+
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
@@ -136,10 +144,11 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h1 class="banner_taital">IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
+                                    <h1 class="banner_taital">Chicago’s Favorite Ice Cream Truck</h1>
+                                    <p class="banner_text">Serving delicious frozen treats on wheels! Find us in
+                                        Chicago, Wheaton, St. Charles, and Batavia for parties, events, and everyday
+                                        sweet cravings.</p>
+
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
@@ -184,7 +193,7 @@
                 </div>
             </div>
         </div>
-        <!-- banner section end -->
+        <!-- banner section end2 -->
     </div>
     <!-- header section end -->
     <!-- about sectuion start -->
@@ -363,141 +372,81 @@
 
     @livewire('contact-form')
 
-    <!-- services section start -->
 
-    <!-- services section end -->
-
-<!-- resources/views/testimonial.blade.php -->
-
-<div class="testimonial_section layout_padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="testimonial_taital">Testimonial</h1>
-            </div>
-        </div>
-        <div class="testimonial_section_2">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="testimonial_box">
-                        <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                    <h4 class="client_name">Marri Fen</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/logo.png') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="testimonial_text">Sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua.</p>
-                                    <h4 class="client_name">John Doe</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/spinner.gif') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="testimonial_text">Ut enim ad minim veniam, quis nostrud exercitation
-                                        ullamco.</p>
-                                    <h4 class="client_name">Jane Smith</h4>
-                                    <div class="client_img">
-                                        <img src="{{ asset('images/client-img.png') }}" alt="Client Image">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Carousel Controls -->
-                  
-
-
-                                    <a class="carousel-control-prev"  data-bs-target="#main_slider" role="button"
-                                data-bs-slide="prev">
-                                    <i class="fa fa-angle-left"></i>
-                                </a>
-                                <a class="carousel-control-next" data-bs-target="#main_slider" role="button"
-                                data-bs-slide="next">
-                                    <i class="fa fa-angle-right"></i>
-                                </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-    <!-- testimonial section start -->
-    {{-- <div class="testimonial_section layout_padding">
+    <div class="testimonial_section layout_padding">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="testimonial_taital">Testimonial</h1>
+                    <h1 class="testimonial_taital">Our Location</h1>
                 </div>
             </div>
             <div class="testimonial_section_2">
                 <div class="row">
                     <div class="col-md-12">
                         <div class="testimonial_box">
-                            <div id="main_slider" class="carousel slide" data-ride="carousel">
+                            <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                        <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.
                                         </p>
-                                        <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
+                                        <h4 class="client_name">St.charles truck ice cream</h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/logo.png') }}"
+                                                style="width: 203px ; height: 170px;" alt="Client Image">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        </p>
-                                        <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
+                                        <p class="testimonial_text">Sed do eiusmod tempor incididunt ut labore et
+                                            dolore
+                                            magna aliqua.</p>
+                                        <h4 class="client_name">John Doe</h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/spinner.gif') }}"
+                                                style="width: 203px ; height: 170px;" alt="Client Image">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="testimonial_text">tempor incididunt ut labore et dolore magna aliqua.
-                                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                                        </p>
-                                        <h4 class="client_name">Marri Fen</h4>
-                                        <div class="client_img"><img src="{{ asset('images/client-img.png') }}">
+                                        <p class="testimonial_text">Ut enim ad minim veniam, quis nostrud exercitation
+                                            ullamco.</p>
+                                        <h4 class="client_name">Jane Smith</h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/client-img.png') }}"
+                                                style="width: 203px ; height: 170px;" alt="Client Image">
                                         </div>
                                     </div>
                                 </div>
-                                <a class="carousel-control-prev" href="#main_slider" role="button"
-                                    data-slide="prev">
+                                <!-- Carousel Controls -->
+
+
+
+                                <a class="carousel-control-prev" data-bs-target="#main_slider" role="button"
+                                    data-bs-slide="prev">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
-                                <a class="carousel-control-next" href="#main_slider" role="button"
-                                    data-slide="next">
+                                <a class="carousel-control-next" data-bs-target="#main_slider" role="button"
+                                    data-bs-slide="next">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> --}}
-    <!-- testimonial section end -->
+    </div>
 
- 
+
+
 
     <!-- contact section start -->
     <div class="contact_section layout_padding">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="contact_main">
-                        <h1 class="contact_taital">Contact Us</h1>
+                        <h1 class="contact_taital maps">Meet US</h1>
                         <div class="map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo"
@@ -515,26 +464,20 @@
                                             aria-hidden="true"></i></span>Making this the first true</a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="tel:+17087458108">
                                     <span class="padding_left_10"><i class="fa fa-phone"
-                                            aria-hidden="true"></i></span>Call : +01 1234567890
+                                            aria-hidden="true"></i></span>Call : +1 (708) 7458108
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="mailto:samicecream52@gmail.com">
                                     <span class="padding_left_10"><i class="fa fa-envelope"
                                             aria-hidden="true"></i></span>Email : samicecream52@gmail.com
                                 </a>
                             </li>
                         </ul>
                     </div>
-                    <div class="mail_main">
-                        <h3 class="newsletter_text">Newsletter</h3>
-                        <div class="form-group">
-                            <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
-                            <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-                        </div>
-                    </div>
+               
                     <div class="footer_social_icon">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -543,6 +486,10 @@
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
+                      <div class="footer_social_icon about_img">
+                  <img style="width: 100px; height: 100px;"
+                        src="images/logo2.png">
+                    </div> 
                 </div>
             </div>
         </div>
@@ -559,16 +506,21 @@
         </div>
     </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- External Bootstrap Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Additional External Plugins -->
     <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mCustomScrollbar/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mCustomScrollbar/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
 
     <!-- Custom JavaScript -->
+    <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
+    <script src="{{ asset('js/popper.min.js') }}"></script>
+
     <script src="{{ asset('js/scrolltop.js') }}"></script>
     <script src="{{ asset('js/plugin.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>

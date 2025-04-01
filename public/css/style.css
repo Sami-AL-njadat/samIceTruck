@@ -426,29 +426,29 @@ button,
 }
 
 .carousel-indicators li {
-    width: 40px;
-    height: 40px;
-    color: #252525;
-    /* width: auto; */
-    /* height: auto; */
-    border: none;
-    text-indent: 0;
-    padding-top: 25px;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+    width: 40px !important;
+    width: 40px !important;
+        color: #252525 !important;
+   /* width: auto; 
+     height: auto; */
+    border: none !important;
+    text-indent: 0 !important;
+    padding-top: 00px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-weight: bold !important;
 }
 
 .carousel-indicators .active {
-    color: #fc95c4;
+    color: #fc95c4 !important;
 }
 
 .carousel-indicators {
-    bottom: -40px;
-    justify-content: left;
-    margin-right: initial;
-    margin-left: 0px;
-}
+    bottom: -40px !important;
+    justify-content: left !important;
+    margin-right: initial !important;
+    margin-left: 0px !important;
+ }
 
 
 /* banner section end */
@@ -736,6 +736,11 @@ button,
     padding: 20px 30px;
     height: auto;
 }
+.services_box:hover{
+    transform: scale(1.1)
+;
+background: #ffd6e1;
+}
 
 .tasty_text {
     width: 100%;
@@ -760,37 +765,39 @@ button,
 /* services section end */
 
 .bordarsmal {
-    position: relative;
+    position: sticky;
     display: inline-block;
 }
 
 .bordarsmal::before {
-    content: "";
-    position: absolute;
-    width: 100%;
+    content: "" !important;
+    position: absolute !important;
+    width: 100% !important;
     /* Adjust size as needed */
-    height: 100%;
+    height: 100% !important;
     /* Adjust size as needed */
-    background: url('../images/test22.png') center center;
+    background: url('../images/test22.png') center center !important;
     /* Change to your preferred color */
-    bottom: -10px;
+    bottom: -10px !important;
     /* Adjust as needed */
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    display: none;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: -1 !important;
+    display: none !important;
     /* Hide by default */
 }
 
+
+
 .bordarsmal img {
-    position: relative;
-    z-index: 1;
-    max-width: 100%;
+    position: relative !important;
+    z-index: 1 !important;
+    max-width: 100% !important;
 }
 
 @media (max-width: 480px) {
     .bordarsmal::before {
-        display: block;
+        display: block !important;
         /* Show circle only on mobile screens */
     }
 
@@ -1202,7 +1209,9 @@ textarea#comment.update_mail::placeholder {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     /* ظل خفيف */
 }
-
+.maps{
+    margin:15px 0px 15px 0px;
+}
 .map-container iframe {
     position: absolute;
     top: 0;
