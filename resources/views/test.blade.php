@@ -387,10 +387,9 @@
                             <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit.
+                                        <p class="testimonial_text">St. Charles chicago
                                         </p>
-                                        <h4 class="client_name">St.charles truck ice cream</h4>
+                                        <h4 class="client_name">St. Charles chicago  </h4>
                                         <div class="client_img">
                                             <img src="{{ asset('images/logo.png') }}"
                                                 style="width: 203px ; height: 170px;" alt="Client Image">
