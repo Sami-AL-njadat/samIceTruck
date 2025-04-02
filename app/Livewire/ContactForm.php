@@ -4,12 +4,12 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail; // إنشاء هذا الميل لاحقًا
+use App\Mail\ContactMail;
+use Illuminate\Support\Facades\Log;
 
 class ContactForm extends Component
 {
     public $name, $email, $phone, $message;
-
 
     protected $rules = [
         'name' => 'required|string|max:255',
@@ -22,12 +22,26 @@ class ContactForm extends Component
     {
         $this->validate();
 
-        // إرسال البريد
-        Mail::to('samicecream52@gmail.com')->send(new ContactMail($this->name, $this->email, $this->phone, $this->message));
+        try {
+            // Attempt to send email
+            Mail::to('samicecream52@gmail.com')->send(new ContactMail(
+                $this->name,
+                $this->email,
+                $this->phone,
+                $this->message
+            ));
 
-        $this->reset();
-
-        session()->flash('success', 'Your message has been send successful');
+            $this->reset();
+            session()->flash('success', 'Your message has been sent successfully!');
+        } catch (\Swift_TransportException $e) {
+            // SMTP specific errors
+            Log::error('SMTP Error: ' . $e->getMessage());
+            session()->flash('error', 'Failed to send message. Please try again later or contact us directly.');
+        } catch (\Exception $e) {
+            // General errors
+            Log::error('Email Error: ' . $e->getMessage());
+            session()->flash('error', 'An unexpected error occurred. Please try again.');
+        }
     }
 
     public function render()

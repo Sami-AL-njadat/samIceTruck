@@ -3,6 +3,7 @@
 namespace App\Mail;
 
 use Illuminate\Mail\Mailable;
+use Illuminate\Support\Facades\Log;
 
 class ContactMail extends Mailable
 {
@@ -21,7 +22,18 @@ class ContactMail extends Mailable
 
     public function build()
     {
-        return $this->subject('New Message !!')
-            ->view('emails.contact-mail');
+        try {
+            return $this->subject('New Message !!')
+                ->view('emails.contact-mail')
+                ->with([
+                    'name' => $this->name,
+                    'email' => $this->email,
+                    'phone' => $this->phone,
+                    'messageContent' => $this->messageContent
+                ]);
+        } catch (\Exception $e) {
+            Log::error('Failed to build email: ' . $e->getMessage());
+            throw $e; // Re-throw to handle in the calling code
+        }
     }
 }
