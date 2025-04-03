@@ -7,11 +7,15 @@
                    <p class="about_text">Please contact with us any times</p>
 
                    <div class="contact_main" >
+                  
+
+
                        @if (session()->has('success'))
-                           <div class="alert alert-success">
-                               {{ session('success') }}
-                           </div>
-                       @endif
+    <div class="alert alert-success">{{ session('success') }}</div>
+@endif
+@if (session()->has('error'))
+    <div class="alert alert-danger">{{ session('error') }}</div>
+@endif
 
                        <form wire:submit.prevent="submitForm">
                            <div class="form-group">
@@ -66,6 +70,7 @@
 
                            <div class="main_bt">
                                <button class="btn-submit" type="submit" wire:loading.attr="disabled">
+                                
                                    Submit
         <img  src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
                                        class="loading-spinner">

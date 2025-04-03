@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
+  use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,10 +21,14 @@ Route::get('/sam-ice-creem-truck', function () {
     return view('index');
 });
 
+ 
 
-
-
+ 
 
 Route::get('/test', function () {
     return view('test');
 });
+
+
+Route::get('contact', [ContactController::class, 'showForm']);
+Route::post('contact', [ContactController::class, 'sendEmail']);

@@ -14,7 +14,7 @@
 
     <title>ٍSam IceCreem Truck</title>
     <meta name="keywords"
-        content="Chicago ice cream, Ice cream truck, Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
+        content="Chicago ice cream, Ice cream truck, chicago, usa ,United States, batavia, Charles, St.Charles st.Batavia,Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
     <meta name="description"
         content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.">
 
@@ -53,7 +53,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="{{ url('/sam-ice-creem-truck') }}">
-                    <img style="width: 71px; height: 89px;" src="images/logo2.png" alt="Logo">
+                    <img style="width: 71px; height: 89px;" src="images/logo2.png" alt="Logo sam ice cream truck">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -118,7 +118,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side0212.png" loading="lazy">
+                                            <img src="images/side0212.png" loading="lazy" alt="sam ice cream truck">
 
                                         </div>
 
@@ -138,7 +138,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side7.png" loading="lazy">
+                                            <img src="images/side7.png" loading="lazy" alt="ice cream truck">
                                         </div>
 
                                     </div>
@@ -163,7 +163,7 @@
                                         <div class="bordarsmal">
 
 
-                                            <img src="images/slid1.png" loading="lazy">
+                                            <img src="images/slid1.png" loading="lazy" alt="ice cream truck chicago"> 
 
 
                                         </div>
@@ -185,7 +185,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side4.png" loading="lazy">
+                                            <img src="images/side4.png" loading="lazy" alt="ice cream truck chicago St.Charles  st.Batavia"> >
 
                                         </div>
 

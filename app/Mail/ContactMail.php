@@ -2,41 +2,38 @@
 
 namespace App\Mail;
 
-use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
-use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
 class ContactMail extends Mailable
 {
-    use Queueable, SerializesModels;
+    public $name;
+    public $email;
+    public $phone;
+    public $messageContent;
 
-    public $data;
-
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
-    public function __construct($data)
+    public function __construct($name, $email, $phone, $messageContent)
     {
-        $this->data = $data;
+        $this->name = $name;
+        $this->email = $email;
+        $this->phone = $phone;
+        $this->messageContent = $messageContent;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {
-        return $this->subject('Contact US - ' . ($this->data['subject'] ?? 'No Subject'))
-            ->view('emails.contact-mail')
-            ->with([
-                'name' => $this->data['name'] ?? 'Unknown',
-                'email' => $this->data['email'] ?? 'No Email',
-                'phone' => $this->data['phone'] ?? 'No Phone',
-                'messageContent' => $this->data['message'] ?? 'No Message',
-            ]);
+        try {
+            return $this->subject('New Message !!')
+                ->view('emails.contact-mail')
+                ->with([
+                    'name' => $this->name,
+                    'email' => $this->email,
+                    'phone' => $this->phone,
+                    'messageContent' => $this->messageContent
+                ]);
+        } catch (\Exception $e) {
+            Log::error('Failed to build email: ' . $e->getMessage());
+            throw $e;  
+        }
     }
 }
