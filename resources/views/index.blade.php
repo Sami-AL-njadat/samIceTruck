@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
     <!-- fevicon -->
-    <link rel="icon" href="{{asset('images/logo2.png')}}" type="image/gif" />
+<link rel="icon" href="{{ asset('images/logo2.ico') }}" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
