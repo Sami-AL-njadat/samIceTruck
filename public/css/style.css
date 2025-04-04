@@ -615,15 +615,15 @@ button,
 }
 
 .price_text {
-    width: 80px;
+    /* width: 80px; */
     margin: 0 auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     color: #373736;
     font-weight: bold;
-    background: #fff;
+    /* background: #fff; */
     padding: 18px 15px;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     font-style: italic;
 }
 
@@ -1243,4 +1243,9 @@ textarea#comment.update_mail::placeholder {
 
 #scrollTopBtn:hover {
     background-color: #e685b3;
+}
+
+
+.imgproduct{
+ height: 184px
 }

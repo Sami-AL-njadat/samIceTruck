@@ -12,11 +12,11 @@
     <!-- site metas -->
 
 
-    <title>ٍSam IceCreem Truck</title>
+    <title>Sam's Ice Cream Truck | Chicago, Batavia, Wheaton & St. Charles</title>
     <meta name="keywords"
         content="Chicago ice cream, Ice cream truck, chicago, usa ,United States, batavia, Charles, St.Charles st.Batavia,Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
     <meta name="description"
-        content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.">
+        content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.,sam ice cream, truck,van,ice ,cream,chicago, usa ,United States,">
 
     <meta name="author" content="sami alnjadat ">
     <!-- bootstrap css -->
@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
     <!-- fevicon -->
-    <link rel="icon" href="images/logo2.png" type="images/logo2.png" />
+    <link rel="icon" href="{{asset('images/logo2.png')}}" type="image/gif" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
@@ -48,12 +48,12 @@
 
 
     <div class="header_section">
-      
- 
+
+
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="{{ url('/sam-ice-creem-truck') }}">
-                    <img style="width: 71px; height: 89px;" src="images/logo2.png" alt="Logo sam ice cream truck">
+                    <img style="width: 71px; height: 89px;" src="{{asset('images/logo2.png')}}" alt="Logo sam ice cream truck">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -75,11 +75,12 @@
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#ellocation">Location</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="#order">Contact Us</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ellocation">Location</a>
+                        </li>
+
                     </ul>
                 </div>
             </nav>
@@ -87,7 +88,7 @@
 
 
 
- 
+
 
 
 
@@ -111,14 +112,20 @@
                                         and Batavia! Perfect for birthdays, corporate events, school gatherings, and
                                         neighborhood fun 🚚🍦.</p>
 
-                                    <h2 class="mt-2">TEL: <a style="color: blue" href="tel:+17087458108">+1 (708) 7458108</a></h2>
+
+                                    <h2 class="mt-2">
+
+                                        <a href="sms:+17087458108" style="color: #007bff; font-weight: bold;"><i
+                                                class="fa fa-comment" style="color: #007bff;"></i> +1 (708)
+                                            745-8108</a>
+                                    </h2>
 
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side0212.png" loading="lazy" alt="sam ice cream truck">
+                                            <img src="images/side0212.png" alt="sam ice cream truck">
 
                                         </div>
 
@@ -130,15 +137,24 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <h1 class="banner_taital">Chicago IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
+                                    <p class="banner_text">Looking for the best ice cream in Chicago? Look no further!
+                                        We proudly offer the Best Ice Cream Truck in Chicago, serving up delicious,
+                                        creamy treats that will satisfy any sweet tooth. Come find us and experience the
+                                        tastiest ice cream in town!</p>
+
+                                    <h2 class="mt-2">
+
+                                        <a href="sms:+17087458108" style="color: #007bff; font-weight: bold;"><i
+                                                class="fa fa-comment" style="color: #007bff;"></i> +1 (708)
+                                            745-8108</a>
+                                    </h2>
+
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side7.png" loading="lazy" alt="ice cream truck">
+                                            <img src="images/side7.png" alt="ice cream truck">
                                         </div>
 
                                     </div>
@@ -154,6 +170,14 @@
                                         Chicago, Wheaton, St. Charles, and Batavia for parties, events, and everyday
                                         sweet cravings.</p>
 
+                                    <h2 class="mt-2">
+
+                                        <a href="sms:+17087458108" style="color: #007bff; font-weight: bold;"><i
+                                                class="fa fa-comment" style="color: #007bff;"></i> +1 (708)
+                                            745-8108</a>
+                                    </h2>
+
+
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
@@ -163,7 +187,7 @@
                                         <div class="bordarsmal">
 
 
-                                            <img src="images/slid1.png" loading="lazy" alt="ice cream truck chicago"> 
+                                            <img src="images/slid1.png" alt="ice cream truck chicago">
 
 
                                         </div>
@@ -176,16 +200,26 @@
                         <div class="carousel-item">
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <h1 class="banner_taital">IceCream Truck</h1>
-                                    <p class="banner_text">It is a long established fact that a reader will be
-                                        distracted by the readable content of a page when looking at its layout. The
-                                        point of using Lorem</p>
+                                    <h1 class="banner_taital">yummy IceCream Truck</h1>
+                                    <p class="banner_text">Indulge in the best ice cream in Chicago with our Ice Cream
+                                        Truck! sam icecream truck We bring the sweetest treats to you wherever you are.
+                                        You can easily book our truck for any event and select the occasion you want
+                                        through email or SMS. We're always available to help make your event extra
+                                        special</p>
+
+                                    <h2 class="mt-2">
+
+                                        <a href="sms:+17087458108" style="color: #007bff; font-weight: bold;"><i
+                                                class="fa fa-comment" style="color: #007bff;"></i> +1 (708)
+                                            745-8108</a>
+                                    </h2>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side4.png" loading="lazy" alt="ice cream truck chicago St.Charles  st.Batavia"> >
+                                            <img src="images/side4.png"
+                                                alt="ice cream truck chicago St.Charles  st.Batavia"> >
 
                                         </div>
 
@@ -215,8 +249,8 @@
                         cream treats that make every moment sweeter. With our wide variety of flavors and friendly
                         service, we’re dedicated to making your special events unforgettable.
 
-                        Ready to add some sweetness to your day? Order now and let the fun begin! 🍦🎉</p>
-                    <div class="read_bt_1"><a href="#order">Order Now</a></div>
+                        Ready to add some sweetness to your day? Book now and let the fun begin! 🍦🎉</p>
+                    <div class="read_bt_1"><a href="#order">Book Now</a></div>
 
                 </div>
             </div>
@@ -307,7 +341,7 @@
             </div>
 
 
-            <div class="seemore_bt"><a href="#order">Order Now</a></div>
+            <div class="seemore_bt"><a href="#order">Book Now</a></div>
 
         </div>
     </div>
@@ -318,30 +352,37 @@
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="cream_taital">Our Featured Ice Cream</h1>
-                    <p class="cream_text">tempor incididunt ut labore et dolore magna aliqua</p>
+                    <p class="cream_text">We deal with different ice cream companies and offer a variety of delicious
+                        products that people love.</p>
                 </div>
             </div>
             <div class="cream_section_2">
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-1.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct" src="images/OriginalBombPop.png"
+                                    loading="lazy"></div>
+                            <div class="price_text">-Best test ever-</div>
+                            <h6 class="strawberry_text">Original Bomb Pop</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-2.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="images/loadd-cones-brownie-bomb-v1.png" loading="lazy"></div>
+                            <div class="price_text">-Enjoy Today-</div>
+                            <h6 class="strawberry_text">loadd-cones-brownie-bomb</h6>
                         </div>
                     </div>
+
+
+
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-1.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct" src="images/vanilla-big-dipper.png"
+                                    loading="lazy"></div>
+                            <div class="price_text">-Great taste-</div>
+                            <h6 class="strawberry_text">Vanilla big dipper</h6>
                         </div>
                     </div>
                 </div>
@@ -350,23 +391,26 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-3.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct" src="images/strawberry-shortcake.png"
+                                    loading="lazy"></div>
+                            <div class="price_text">-Very mazing-</div>
+                            <h6 class="strawberry_text">strawberry shortcake</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-4.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct" src="images/chips-galore-sandwich.png"
+                                    loading="lazy"></div>
+                            <div class="price_text">-yummy Sandwich-</div>
+                            <h6 class="strawberry_text">chips-galore-sandwich</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img src="images/img-5.png" loading="lazy"></div>
-                            <div class="price_text">$10</div>
-                            <h6 class="strawberry_text">Strawberry Ice Cream</h6>
+                            <div class="cream_img"><img class="imgproduct" src="images/CookiesCream.png"
+                                    loading="lazy"></div>
+                            <div class="price_text">-A strong shock-</div>
+                            <h6 class="strawberry_text">Cookies Cream</h6>
                         </div>
                     </div>
                 </div>
@@ -387,37 +431,44 @@
             </div>
             <div class="testimonial_section_2">
                 <div class="row">
-                    <div class="col-md-12" >
-                        <div class="testimonial_box" >
+                    <div class="col-md-12">
+                        <div class="testimonial_box">
                             <div id="main_slider" class="carousel slide" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <p class="testimonial_text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                            elit.
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location St.charles Chicago – we’re waiting for you
+
                                         </p>
-                                        <h4 class="client_name">St.charles truck ice cream</h4>
+                                        <h4 class="client_name">St.charles Chicago</h4>
                                         <div class="client_img">
-                                            <img src="{{ asset('images/logo.png') }}"
-                                                style="width: 203px ; height: 170px;" alt="Client Image">
+                                            <img src="{{ asset('images/St.Charles.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="St.Charles sam ice cream">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="testimonial_text">Sed do eiusmod tempor incididunt ut labore et
-                                            dolore
-                                            magna aliqua.</p>
-                                        <h4 class="client_name">John Doe</h4>
+                                      <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Wheaton Chicago – we’re waiting for you
+
+                                        </p>
+                                        <h4 class="client_name">Wheaton Chicago</h4>
                                         <div class="client_img">
-                                            <img src="{{ asset('images/spinner.gif') }}"
-                                                style="width: 203px ; height: 170px;" alt="Client Image">
+                                            <img src="{{ asset('images/WheatonChicagos.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Wheaton Chicagos  sam ice cream">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <p class="testimonial_text">Ut enim ad minim veniam, quis nostrud exercitation
-                                            ullamco.</p>
-                                        <h4 class="client_name">Jane Smith</h4>
+                                      <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Batavia Chicago – we’re waiting for you
+
+                                        </p>
+                                        <h4 class="client_name">Batavia Chicago</h4>
                                         <div class="client_img">
-                                            <img src="{{ asset('images/client-img.png') }}"
-                                                style="width: 203px ; height: 170px;" alt="Client Image">
+                                            <img src="{{ asset('images/Batavia.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Batavia Chicago sam ice cream">
                                         </div>
                                     </div>
                                 </div>
@@ -464,7 +515,7 @@
                     <div class="location_text">
                         <ul>
                             <li>
-                                <a href="#">
+                                <a href="#ellocation">
                                     <span class="padding_left_10 active"><i class="fa fa-map-marker"
                                             aria-hidden="true"></i></span>Making this the first true</a>
                             </li>
@@ -482,7 +533,7 @@
                             </li>
                         </ul>
                     </div>
-               
+
                     <div class="footer_social_icon">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
@@ -491,10 +542,9 @@
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
-                      <div class="footer_social_icon about_img">
-                  <img style="width: 100px; height: 100px;"
-                        src="images/logo2.png">
-                    </div> 
+                    <div class="footer_social_icon about_img">
+                        <img style="width: 100px; height: 100px;" src="images/logo2.png">
+                    </div>
                 </div>
             </div>
         </div>
