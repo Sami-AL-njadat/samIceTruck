@@ -1,8 +1,9 @@
 <?php
 
- use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ProfileController;
+use Illuminate\Support\Facades\Route;
 
-  use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +14,10 @@
 | be assigned to the "web" middleware group. Make something great!
 |
 */
- 
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
 Route::get('/sam-ice-creem-truck', function () {
@@ -21,5 +25,10 @@ Route::get('/sam-ice-creem-truck', function () {
 });
 
  
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.table')->middleware('auth');
+Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy')->middleware('auth');
 
  
+ 
+
+require __DIR__.'/auth.php';

@@ -3,13 +3,11 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\ContactMail; // إنشاء هذا الميل لاحقًا
+use App\Models\Contact;
 
 class ContactForm extends Component
 {
     public $name, $email, $phone, $message;
-
 
     protected $rules = [
         'name' => 'required|string|max:255',
@@ -23,13 +21,18 @@ class ContactForm extends Component
         $this->validate();
 
         try {
-             Mail::to('samicecream52@gmail.com')->send(new ContactMail($this->name, $this->email, $this->phone, $this->message));
+            Contact::create([
+                'name' => $this->name,
+                'email' => $this->email,
+                'phone' => $this->phone,
+                'message' => $this->message,
+            ]);
 
-             $this->reset();
+            $this->reset();
 
-             session()->flash('success', 'Message sent successfully!');
+            session()->flash('success', 'Your message has been submitted successfully!');
         } catch (\Exception $e) {
-             session()->flash('error', 'There was an error sending your message.');
+            session()->flash('error', 'Error: ' . $e->getMessage());
         }
     }
 

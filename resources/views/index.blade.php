@@ -234,8 +234,7 @@
         </div>
         <!-- banner section end2 -->
     </div>
-    <!-- header section end -->
-    <!-- about sectuion start -->
+     <!-- about sectuion start -->
     <div class="about_section layout_padding">
         <div class="container" id="aboutUs">
             <div class="row">
@@ -579,14 +578,13 @@
     <script src="{{ asset('js/scrolltop.js') }}"></script>
     <script src="{{ asset('js/plugin.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
-
+ 
     <script>
         var preloader = document.getElementById("preloader");
         window.addEventListener("load", function() {
             preloader.style.display = "none"
         })
     </script>
-    </script>
-</body>
+ </body>
 
 </html>
