@@ -139,8 +139,23 @@ a {
     text-decoration: none;
     outline: none !important;
 }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
 
+    to {
+        transform: rotate(360deg);
+    }
+}
 
+.spin-on-scroll img {
+    transition: transform 1s ease-in-out;
+}
+
+.spin-on-scroll.spin img {
+    animation: spin 1s ease-in-out;
+}
 
 a,
 .btn {
@@ -235,6 +250,7 @@ button,
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
+
 
 /* Custom Submit Button Style */
 .btn-submit {

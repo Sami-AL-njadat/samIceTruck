@@ -239,7 +239,7 @@
         <div class="container" id="aboutUs">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="about_img"><img src="images/about-img.png" loading="lazy"></div>
+                    <div class="about_img spin-on-scroll"><img src="{{asset('images/about22.png')}}" loading="lazy"></div>
                 </div>
                 <div class="col-md-6">
                     <h1 class="about_taital">About Sam Ice-Cream Truck</h1>
@@ -578,6 +578,7 @@
     <script src="{{ asset('js/scrolltop.js') }}"></script>
     <script src="{{ asset('js/plugin.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('js/animation22.js') }}"></script>
  
     <script>
         var preloader = document.getElementById("preloader");
@@ -585,6 +586,9 @@
             preloader.style.display = "none"
         })
     </script>
+
+
+
  </body>
 
 </html>
