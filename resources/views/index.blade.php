@@ -594,9 +594,11 @@
             preloader.style.display = "none"
         })
     </script>
+ 
 
- <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
+<!-- Callback function to pass token to Livewire -->
 <script>
     function recaptchaCallback(token) {
         const component = Livewire.find(document.querySelector('[wire\\:id]').getAttribute('wire:id'));
