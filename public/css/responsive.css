@@ -125,6 +125,37 @@
     .mean-container .mean-nav ul li a.mean-expand {
         top: 0;
     }
+
+
+
+
+
+
+
+        .spin-on-scroll img {
+            width: 175px;
+            /* or 100%, or fixed px/rem */
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            transition: transform 1s ease-in-out;
+            transform-origin: center center;
+            backface-visibility: hidden;
+        }
+    
+        .spin-on-scroll.spin img {
+            animation: spin 1s ease-in-out;
+        }
+    
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+    
+            to {
+                transform: rotate(360deg);
+            }
+        }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
