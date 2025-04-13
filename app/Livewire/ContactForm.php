@@ -7,7 +7,7 @@ use App\Models\Contact;
 
 class ContactForm extends Component
 {
-    public $name, $email, $phone, $message .$recaptchaToken;
+    public $name, $email, $phone, $message, $recaptchaToken;
 
      protected $rules = [
         'name' => 'required|string|max:255',
