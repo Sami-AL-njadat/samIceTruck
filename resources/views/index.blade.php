@@ -606,15 +606,16 @@
 <!-- reCAPTCHA script -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- Callback to pass the token to Livewire -->
-<script>
+<!-- reCAPTCHA script -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+ <script>
     function recaptchaCallback(token) {
-        const component = Livewire.find(document.querySelector('[wire\\:id]').getAttribute('wire:id'));
+const component = Livewire.find(component.id);
         component.set('recaptchaToken', token);
     }
 
-    // Re-render reCAPTCHA after Livewire updates
-    Livewire.hook('message.processed', (message, component) => {
+     Livewire.hook('message.processed', (message, component) => {
         if (typeof grecaptcha !== "undefined") {
             const recaptchaDiv = document.querySelector('.g-recaptcha');
             if (recaptchaDiv) {
@@ -627,7 +628,6 @@
         }
     });
 </script>
-
 
 
 </body>
