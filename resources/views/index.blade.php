@@ -581,6 +581,7 @@
     <!-- Custom JavaScript -->
     <script src="{{ asset('js/jquery.mCustomScrollbar.concat.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
+@livewireScripts
 
     <script src="{{ asset('js/scrolltop.js') }}"></script>
     <script src="{{ asset('js/plugin.js') }}"></script>
@@ -598,7 +599,8 @@
 
 <script>
     function recaptchaCallback(token) {
-        @this.set('recaptchaToken', token);
+        const component = Livewire.find(document.querySelector('[wire\\:id]').getAttribute('wire:id'));
+        component.set('recaptchaToken', token);
     }
 </script>
 
