@@ -4,37 +4,21 @@ namespace App\Livewire;
 
 use Livewire\Component;
 use App\Models\Contact;
-use Illuminate\Support\Facades\Http;
 
 class ContactForm extends Component
 {
-    public $name, $email, $phone, $message, $recaptchaToken;
+    public $name, $email, $phone, $message;
 
     protected $rules = [
         'name' => 'required|string|max:255',
         'email' => 'required|email',
         'message' => 'required|string|min:10',
         'phone' => 'required|numeric|digits:10',
-        'recaptchaToken' => 'required',
     ];
 
     public function submitForm()
     {
         $this->validate();
-
-        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
-            'secret' => config('services.recaptcha.secret'),
-            'response' => $this->recaptchaToken,
-        ]);
-
-        if (!$response->json('success')) {
-            session()->flash('error', 'reCAPTCHA validation failed. Please try again.');
-            return;
-        }
-        if (!$this->recaptchaToken) {
-            session()->flash('error', 'Please complete the reCAPTCHA verification.');
-            return;
-        }
 
         try {
             Contact::create([
@@ -44,14 +28,13 @@ class ContactForm extends Component
                 'message' => $this->message,
             ]);
 
-            $this->reset(['name', 'email', 'phone', 'message', 'recaptchaToken']);
+            $this->reset();
 
             session()->flash('success', 'Your message has been submitted successfully!');
         } catch (\Exception $e) {
             session()->flash('error', 'Error: ' . $e->getMessage());
         }
     }
-
 
     public function render()
     {

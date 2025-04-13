@@ -6,16 +6,16 @@
 
                    <p class="about_text">Please contact with us any times</p>
 
-                   <div class="contact_main">
-
+                   <div class="contact_main" >
+                  
 
 
                        @if (session()->has('success'))
-                           <div class="alert alert-success">{{ session('success') }}</div>
-                       @endif
-                       @if (session()->has('error'))
-                           <div class="alert alert-danger">{{ session('error') }}</div>
-                       @endif
+    <div class="alert alert-success">{{ session('success') }}</div>
+@endif
+@if (session()->has('error'))
+    <div class="alert alert-danger">{{ session('error') }}</div>
+@endif
 
                        <form wire:submit.prevent="submitForm">
                            <div class="form-group">
@@ -65,38 +65,22 @@
                                @enderror
                            </div>
 
-
+                    
 
 
                            <div class="main_bt">
                                <button class="btn-submit" type="submit" wire:loading.attr="disabled">
-
+                                
                                    Submit
-                                   <img src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
+        <img  src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
                                        class="loading-spinner">
-
+                             
                                </button>
                            </div>
 
 
-                           <div class="main_bt">
-                               <!-- Google reCAPTCHA -->
-                               <div class="g-recaptcha mt-4" data-sitekey="{{ config('services.recaptcha.key') }}"
-                                   data-callback="recaptchaCallback">
-                               </div>
-
-                               <!-- Error Message -->
-                               @error('recaptchaToken')
-                                   <span class="text-danger">{{ $message }}</span>
-                               @enderror
-                           </div>
-
-
-
                        </form>
                    </div>
-
-
                </div>
 
 
