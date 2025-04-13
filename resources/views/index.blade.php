@@ -5,9 +5,8 @@
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
 
@@ -125,7 +124,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side0212.png" alt="sam ice cream truck">
+                                            <img src="{{asset('images/side0212.png')}}" alt="icecream">
 
                                         </div>
 
@@ -154,7 +153,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side7.png" alt="ice cream truck">
+                                            <img src="{{asset('images/side7.png')}}" alt="ice cream truck">
                                         </div>
 
                                     </div>
@@ -187,7 +186,7 @@
                                         <div class="bordarsmal">
 
 
-                                            <img src="images/slid1.png" alt="ice cream truck chicago">
+                                            <img src="{{asset('images/slid1.png')}}" alt="ice cream truck chicago" loading="lazy">
 
 
                                         </div>
@@ -218,8 +217,8 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="images/side4.png"
-                                                alt="ice cream truck chicago St.Charles  st.Batavia"> >
+                                            <img src="{{asset('images/side4.png')}}"  loading="lazy"
+                                                alt="ice cream truck chicago St.Charles  st.Batavia"> 
 
                                         </div>
 
@@ -239,7 +238,7 @@
         <div class="container" id="aboutUs">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="about_img spin-on-scroll"><img src="{{asset('images/about22.png')}}" loading="lazy"></div>
+                    <div class="about_img spin-on-scroll"><img src="{{asset('images/about22.png')}}" loading="lazy" alt="Batavia"></div>
                 </div>
                 <div class="col-md-6">
                     <h1 class="about_taital">About Sam Ice-Cream Truck</h1>
@@ -271,7 +270,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/marriage.png') }}"></span>Wedding Ice-Cream</h5>
+                                        src="{{ asset('images/marriage.png') }}"  alt="Chicago" loading="lazy"></span>Wedding Ice-Cream</h5>
                             <p class="lorem_text">Add a Sweet Touch to Your Wedding!
                                 Let us bring a unique experience to your special day with our delicious Cookies Ice
                                 Cream, making your party even more fun and unforgettable. 🎉🍦 </p>
@@ -281,7 +280,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/Fundraising.png') }}"></span>fundraising Ice-Cream</h5>
+                                        src="{{ asset('images/Fundraising.png') }}" alt="Chicago" loading="lazy"></span>fundraising Ice-Cream</h5>
                             <p class="lorem_text">Sweeten Your Fundraiser with Ice Cream!
                                 Make your event unforgettable with our delicious ice cream. Every scoop brings smiles
                                 and supports your cause — a perfect way to raise funds while spreading joy! 🍦❤️ </p>
@@ -290,7 +289,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/hosrital.png') }}"></span>Hospital Ice-Cream</h5>
+                                        src="{{ asset('images/hosrital.png') }}" alt="Chicago" loading="lazy"></span>Hospital Ice-Cream</h5>
                             <p class="lorem_text">Bringing Smiles with Every Scoop!
                                 Treat patients, staff, and visitors to a delightful ice cream experience. A little
                                 sweetness can brighten any day — because everyone deserves a moment of joy. 🍦😊</p>
@@ -306,7 +305,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/pivateEvents.png') }}"></span>Private Event Ice-Cream
+                                        src="{{ asset('images/pivateEvents.png') }}" alt="Chicago" loading="lazy" ></span>Private Event Ice-Cream
                             </h5>
                             <p class="lorem_text">Make Your Private Event Unforgettable!
                                 Add a sweet touch to your special gatherings with our delicious Ice Cream. Perfect for
@@ -318,7 +317,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/school.png') }}"></span>School Ice-Cream</h5>
+                                        src="{{ asset('images/school.png') }}" alt="Chicago" loading="lazy"></span>School Ice-Cream</h5>
                             <p class="lorem_text">
                                 Cool Treats for Cool Kids!
                                 Bring excitement to your school events with our delicious ice cream. Perfect for
@@ -329,7 +328,7 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/birthday.png') }}"></span>Birthday Ice-Cream</h5>
+                                        src="{{ asset('images/birthday.png') }}" alt="Batavia"  loading="lazy"></span>Birthday Ice-Cream</h5>
                             <p class="lorem_text">Celebrate Your Birthday with a Sweet Surprise!
                                 Make your special day unforgettable with our delicious ice cream. Perfect for kids and
                                 adults alike — because every birthday deserves a tasty treat! 🎂🍦🎉</p>
@@ -359,8 +358,8 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="images/OriginalBombPop.png"
-                                    loading="lazy"></div>
+                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/OriginalBombPop.png')}}"
+                                    loading="lazy"  alt="Chicago ice cream"></div>
                             <div class="price_text">-Best test ever-</div>
                             <h6 class="strawberry_text">Original Bomb Pop</h6>
                         </div>
@@ -368,7 +367,7 @@
                     <div class="col-md-4">
                         <div class="cream_box">
                             <div class="cream_img"><img class="imgproduct"
-                                    src="images/loadd-cones-brownie-bomb-v1.png" loading="lazy"></div>
+                                    src="{{asset('images/loadd-cones-brownie-bomb-v1.png')}}" loading="lazy" alt="Chicago ice cream"></div>
                             <div class="price_text">-Enjoy Today-</div>
                             <h6 class="strawberry_text">loadd-cones-brownie-bomb</h6>
                         </div>
@@ -378,8 +377,8 @@
 
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="images/vanilla-big-dipper.png"
-                                    loading="lazy"></div>
+                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/vanilla-big-dipper.png')}}"
+                                    loading="lazy" alt="sam ice cream"></div>
                             <div class="price_text">-Great taste-</div>
                             <h6 class="strawberry_text">Vanilla big dipper</h6>
                         </div>
@@ -390,24 +389,24 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="images/strawberry-shortcake.png"
-                                    loading="lazy"></div>
+                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/strawberry-shortcake.png')}}"
+                                    loading="lazy" alt="sam ice cream"></div>
                             <div class="price_text">-Very mazing-</div>
                             <h6 class="strawberry_text">strawberry shortcake</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="images/chips-galore-sandwich.png"
-                                    loading="lazy"></div>
+                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/chips-galore-sandwich.png')}}"
+                                    loading="lazy" alt="sam ice cream"></div>
                             <div class="price_text">-yummy Sandwich-</div>
                             <h6 class="strawberry_text">chips-galore-sandwich</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="images/CookiesCream.png"
-                                    loading="lazy"></div>
+                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/CookiesCream.png')}}"
+                                    loading="lazy" alt="sam ice cream"></div>
                             <div class="price_text">-A strong shock-</div>
                             <h6 class="strawberry_text">Cookies Cream</h6>
                         </div>
@@ -443,7 +442,9 @@
                                         <div class="client_img">
                                             <img src="{{ asset('images/St.Charles.png') }}"
                                                 style="width: 290px ; height: 220px;"
-                                                alt="St.Charles sam ice cream">
+                                                alt="St.Charles sam ice cream"
+                                                  loading="lazy"
+                                                >
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -455,7 +456,9 @@
                                         <div class="client_img">
                                             <img src="{{ asset('images/WheatonChicagos.png') }}"
                                                 style="width: 290px ; height: 220px;"
-                                                alt="Wheaton Chicagos  sam ice cream">
+                                                alt="Wheaton Chicagos  sam ice cream"
+                                                loading="lazy"
+                                                >
                                         </div>
                                     </div>
                                     <div class="carousel-item">
@@ -467,7 +470,10 @@
                                         <div class="client_img">
                                             <img src="{{ asset('images/Batavia.png') }}"
                                                 style="width: 290px ; height: 220px;"
-                                                alt="Batavia Chicago sam ice cream">
+                                                alt="Batavia Chicago sam ice cream"
+                                                 loading="lazy"
+
+                                                >
                                         </div>
                                     </div>
                                 </div>
@@ -542,7 +548,8 @@
                         </ul>
                     </div>
                     <div class="footer_social_icon about_img">
-                        <img style="width: 100px; height: 100px;" src="images/logo2.png">
+                        <img style="width: 100px; height: 100px;" src="{{asset('images/logo2.png')}}"
+                         alt="Chicago ice cream">
                     </div>
                 </div>
             </div>
@@ -587,6 +594,7 @@
         })
     </script>
 
+<script async src="https://www.google.com/recaptcha/api.js"></script>
 
 
  </body>

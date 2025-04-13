@@ -78,9 +78,17 @@
                                </button>
                            </div>
 
+                           
+                           <div class="main_bt">
+                                            <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
+
+                           </div>
+
 
                        </form>
                    </div>
+
+
                </div>
 
 
