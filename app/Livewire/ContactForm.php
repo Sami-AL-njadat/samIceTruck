@@ -31,6 +31,10 @@ class ContactForm extends Component
             session()->flash('error', 'reCAPTCHA validation failed. Please try again.');
             return;
         }
+        if (!$this->recaptchaToken) {
+            session()->flash('error', 'Please complete the reCAPTCHA verification.');
+            return;
+        }
 
         try {
             Contact::create([
