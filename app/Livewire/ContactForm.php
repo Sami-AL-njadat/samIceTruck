@@ -7,18 +7,34 @@ use App\Models\Contact;
 
 class ContactForm extends Component
 {
-    public $name, $email, $phone, $message;
+    public $name, $email, $phone, $message .$recaptchaToken;
 
-    protected $rules = [
+     protected $rules = [
         'name' => 'required|string|max:255',
         'email' => 'required|email',
         'message' => 'required|string|min:10',
         'phone' => 'required|numeric|digits:10',
+        'recaptchaToken' => 'required',
+
     ];
 
     public function submitForm()
     {
+
         $this->validate();
+
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => config('services.recaptcha.secret'),
+            'response' => $this->recaptchaToken,
+        ]);
+
+        $result = $response->json();
+
+        if (!($result['success'] ?? false)) {
+            session()->flash('error', 'reCAPTCHA verification failed. Please try again.');
+            return;
+        }
+
 
         try {
             Contact::create([

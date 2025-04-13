@@ -80,7 +80,11 @@
 
                            
                            <div class="main_bt">
-                                            <div class="g-recaptcha mt-4" data-sitekey={{config('services.recaptcha.key')}}></div>
+<div class="main_bt">
+    <div class="g-recaptcha mt-4" data-sitekey="{{ config('services.recaptcha.key') }}" data-callback="recaptchaCallback"></div>
+    @error('recaptchaToken') <span class="text-danger">{{ $message }}</span> @enderror
+</div>
+
 
                            </div>
 
