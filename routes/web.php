@@ -20,15 +20,16 @@ use Illuminate\Support\Facades\Route;
 // });
 
 
-Route::get('/sam-ice-creem-truck', function () {
+
+Route::get('/chicagoSamIceCreamTruck', function () {
     return view('index');
 });
 
- 
+
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.table')->middleware('auth');
 Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy')->middleware('auth');
 
- 
- 
 
-require __DIR__.'/auth.php';
+
+
+require __DIR__ . '/auth.php';

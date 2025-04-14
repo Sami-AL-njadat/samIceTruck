@@ -4,18 +4,19 @@
                <div class="col-md-6" id="order">
                    <h1 class="about_taital">Contact Us</h1>
 
-                   <p class="about_text">Please contact with us any times</p>
+                   <p class="about_text">Feel free to book and tell us what you’re looking for — we’ll get back to you
+                       soon!</p>
 
-                   <div class="contact_main" >
-                  
+                   <div class="contact_main">
+
 
 
                        @if (session()->has('success'))
-    <div class="alert alert-success">{{ session('success') }}</div>
-@endif
-@if (session()->has('error'))
-    <div class="alert alert-danger">{{ session('error') }}</div>
-@endif
+                           <div class="alert alert-success">{{ session('success') }}</div>
+                       @endif
+                       @if (session()->has('error'))
+                           <div class="alert alert-danger">{{ session('error') }}</div>
+                       @endif
 
                        <form wire:submit.prevent="submitForm">
                            <div class="form-group">
@@ -65,16 +66,16 @@
                                @enderror
                            </div>
 
-                    
+
 
 
                            <div class="main_bt">
                                <button class="btn-submit" type="submit" wire:loading.attr="disabled">
-                                
+
                                    Submit
-        <img  src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
+                                   <img src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
                                        class="loading-spinner">
-                             
+
                                </button>
                            </div>
 

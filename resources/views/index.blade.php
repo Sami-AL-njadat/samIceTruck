@@ -1,21 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- basic -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
 
 
-    <title>Sam's Ice Cream Truck | Chicago, Batavia, Wheaton & St. Charles</title>
+    <title>Chicago Ice Cream Truck | Sam IceCream Truck | Chicago, Batavia, Wheaton & St. Charles</title>
     <meta name="keywords"
-        content="Chicago ice cream, Ice cream truck, chicago, usa ,United States, batavia, Charles, St.Charles st.Batavia,Van ice cream, Wheaton ice cream, St. Charles truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
+        content="Chicago ice cream, Ice cream truck, chicago, usa ,United States, batavia, Charles, St.Charles st.Batavia,Van ice cream, Wheaton ice cream, St. Charles,Glen Ellen,Glendal heights ,West Chicago,Naperville,Downers,chicago ice cream ,truck ice cream, Wheaton ice cream truck, Batavia ice cream truck">
     <meta name="description"
-        content="Enjoy delicious ice cream in Chicago and surrounding areas. Find the best ice cream trucks in Wheaton, St. Charles, and Batavia.,sam ice cream, truck,van,ice ,cream,chicago, usa ,United States,">
+        content="Enjoy delicious ice cream in Chicago and surrounding areas. ,chicago ice cream, Find the best ice cream trucks in Wheaton, St. Charles, ,Glen Ellen,Glendal heights ,West Chicago,Naperville,Downers,and Batavia.,sam ice cream, truck,van,ice ,cream,chicago, usa ,United States,">
 
     <meta name="author" content="sami alnjadat ">
     <!-- bootstrap css -->
@@ -28,7 +27,7 @@
     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
 
     <!-- fevicon -->
-<link rel="icon" href="{{ asset('images/logo2.ico') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('images/logo2.ico') }}" type="image/x-icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
 
@@ -51,8 +50,9 @@
 
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="{{ url('/sam-ice-creem-truck') }}">
-                    <img style="width: 71px; height: 89px;" src="{{asset('images/logo2.png')}}" alt="Logo sam ice cream truck">
+                <a class="navbar-brand" href="{{ url('/chicagoSamIceCreamTruck') }}">
+                    <img style="width: 71px; height: 89px;" src="{{ asset('images/logo2.png') }}"
+                        alt="Logo sam ice cream truck">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -62,7 +62,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="{{ url('/sam-ice-creem-truck') }}">Home</a>
+                            <a class="nav-link" href="{{ url('/chicagoSamIceCreamTruck') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#aboutUs">About</a>
@@ -124,7 +124,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="{{asset('images/side0212.png')}}" alt="icecream">
+                                            <img src="{{ asset('images/side0212.png') }}" alt="icecream">
 
                                         </div>
 
@@ -153,7 +153,7 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="{{asset('images/side7.png')}}" alt="ice cream truck">
+                                            <img src="{{ asset('images/side7.png') }}" alt="ice cream truck">
                                         </div>
 
                                     </div>
@@ -186,7 +186,8 @@
                                         <div class="bordarsmal">
 
 
-                                            <img src="{{asset('images/slid1.png')}}" alt="ice cream truck chicago" loading="lazy">
+                                            <img src="{{ asset('images/slid1.png') }}" alt="ice cream truck chicago"
+                                                loading="lazy">
 
 
                                         </div>
@@ -217,8 +218,8 @@
                                     <div class="banner_img">
 
                                         <div class="bordarsmal">
-                                            <img src="{{asset('images/side4.png')}}"  loading="lazy"
-                                                alt="ice cream truck chicago St.Charles  st.Batavia"> 
+                                            <img src="{{ asset('images/side4.png') }}" loading="lazy"
+                                                alt="ice cream truck chicago St.Charles  st.Batavia">
 
                                         </div>
 
@@ -233,12 +234,13 @@
         </div>
         <!-- banner section end2 -->
     </div>
-     <!-- about sectuion start -->
+    <!-- about sectuion start -->
     <div class="about_section layout_padding">
         <div class="container" id="aboutUs">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="about_img spin-on-scroll"><img src="{{asset('images/about22.png')}}" loading="lazy" alt="Batavia"></div>
+                    <div class="about_img spin-on-scroll"><img src="{{ asset('images/about22.png') }}"
+                            loading="lazy" alt="Batavia"></div>
                 </div>
                 <div class="col-md-6">
                     <h1 class="about_taital">About Sam Ice-Cream Truck</h1>
@@ -270,7 +272,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/marriage.png') }}"  alt="Chicago" loading="lazy"></span>Wedding Ice-Cream</h5>
+                                        src="{{ asset('images/marriage.png') }}" alt="Chicago"
+                                        loading="lazy"></span>Wedding Ice-Cream</h5>
                             <p class="lorem_text">Add a Sweet Touch to Your Wedding!
                                 Let us bring a unique experience to your special day with our delicious Cookies Ice
                                 Cream, making your party even more fun and unforgettable. 🎉🍦 </p>
@@ -280,7 +283,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/Fundraising.png') }}" alt="Chicago" loading="lazy"></span>fundraising Ice-Cream</h5>
+                                        src="{{ asset('images/Fundraising.png') }}" alt="Chicago"
+                                        loading="lazy"></span>fundraising Ice-Cream</h5>
                             <p class="lorem_text">Sweeten Your Fundraiser with Ice Cream!
                                 Make your event unforgettable with our delicious ice cream. Every scoop brings smiles
                                 and supports your cause — a perfect way to raise funds while spreading joy! 🍦❤️ </p>
@@ -289,7 +293,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/hosrital.png') }}" alt="Chicago" loading="lazy"></span>Hospital Ice-Cream</h5>
+                                        src="{{ asset('images/hosrital.png') }}" alt="Chicago"
+                                        loading="lazy"></span>Hospital Ice-Cream</h5>
                             <p class="lorem_text">Bringing Smiles with Every Scoop!
                                 Treat patients, staff, and visitors to a delightful ice cream experience. A little
                                 sweetness can brighten any day — because everyone deserves a moment of joy. 🍦😊</p>
@@ -305,7 +310,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/pivateEvents.png') }}" alt="Chicago" loading="lazy" ></span>Private Event Ice-Cream
+                                        src="{{ asset('images/pivateEvents.png') }}" alt="Chicago"
+                                        loading="lazy"></span>block Party
                             </h5>
                             <p class="lorem_text">Make Your Private Event Unforgettable!
                                 Add a sweet touch to your special gatherings with our delicious Ice Cream. Perfect for
@@ -317,7 +323,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/school.png') }}" alt="Chicago" loading="lazy"></span>School Ice-Cream</h5>
+                                        src="{{ asset('images/school.png') }}" alt="Chicago"
+                                        loading="lazy"></span>School Ice-Cream</h5>
                             <p class="lorem_text">
                                 Cool Treats for Cool Kids!
                                 Bring excitement to your school events with our delicious ice cream. Perfect for
@@ -328,7 +335,8 @@
                     <div class="col-md-4">
                         <div class="services_box">
                             <h5 class="tasty_text"><span class="icon_img"><img
-                                        src="{{ asset('images/birthday.png') }}" alt="Batavia"  loading="lazy"></span>Birthday Ice-Cream</h5>
+                                        src="{{ asset('images/birthday.png') }}" alt="Batavia"
+                                        loading="lazy"></span>Birthday Ice-Cream</h5>
                             <p class="lorem_text">Celebrate Your Birthday with a Sweet Surprise!
                                 Make your special day unforgettable with our delicious ice cream. Perfect for kids and
                                 adults alike — because every birthday deserves a tasty treat! 🎂🍦🎉</p>
@@ -358,8 +366,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/OriginalBombPop.png')}}"
-                                    loading="lazy"  alt="Chicago ice cream"></div>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="{{ asset('images/OriginalBombPop.png') }}" loading="lazy"
+                                    alt="Chicago ice cream"></div>
                             <div class="price_text">-Best test ever-</div>
                             <h6 class="strawberry_text">Original Bomb Pop</h6>
                         </div>
@@ -367,7 +376,8 @@
                     <div class="col-md-4">
                         <div class="cream_box">
                             <div class="cream_img"><img class="imgproduct"
-                                    src="{{asset('images/loadd-cones-brownie-bomb-v1.png')}}" loading="lazy" alt="Chicago ice cream"></div>
+                                    src="{{ asset('images/loadd-cones-brownie-bomb-v1.png') }}" loading="lazy"
+                                    alt="Chicago ice cream"></div>
                             <div class="price_text">-Enjoy Today-</div>
                             <h6 class="strawberry_text">loadd-cones-brownie-bomb</h6>
                         </div>
@@ -377,8 +387,9 @@
 
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/vanilla-big-dipper.png')}}"
-                                    loading="lazy" alt="sam ice cream"></div>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="{{ asset('images/vanilla-big-dipper.png') }}" loading="lazy"
+                                    alt="sam ice cream"></div>
                             <div class="price_text">-Great taste-</div>
                             <h6 class="strawberry_text">Vanilla big dipper</h6>
                         </div>
@@ -389,24 +400,27 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/strawberry-shortcake.png')}}"
-                                    loading="lazy" alt="sam ice cream"></div>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="{{ asset('images/strawberry-shortcake.png') }}" loading="lazy"
+                                    alt="sam ice cream"></div>
                             <div class="price_text">-Very mazing-</div>
                             <h6 class="strawberry_text">strawberry shortcake</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/chips-galore-sandwich.png')}}"
-                                    loading="lazy" alt="sam ice cream"></div>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="{{ asset('images/chips-galore-sandwich.png') }}" loading="lazy"
+                                    alt="sam ice cream"></div>
                             <div class="price_text">-yummy Sandwich-</div>
                             <h6 class="strawberry_text">chips-galore-sandwich</h6>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="cream_box">
-                            <div class="cream_img"><img class="imgproduct" src="{{asset('images/CookiesCream.png')}}"
-                                    loading="lazy" alt="sam ice cream"></div>
+                            <div class="cream_img"><img class="imgproduct"
+                                    src="{{ asset('images/CookiesCream.png') }}" loading="lazy" alt="sam ice cream">
+                            </div>
                             <div class="price_text">-A strong shock-</div>
                             <h6 class="strawberry_text">Cookies Cream</h6>
                         </div>
@@ -441,14 +455,12 @@
                                         <h4 class="client_name">St.charles Chicago</h4>
                                         <div class="client_img">
                                             <img src="{{ asset('images/St.Charles.png') }}"
-                                                style="width: 290px ; height: 220px;"
-                                                alt="St.Charles sam ice cream"
-                                                  loading="lazy"
-                                                >
+                                                style="width: 290px ; height: 220px;" alt="St.Charles sam ice cream"
+                                                loading="lazy">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                      <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
                                             location Wheaton Chicago – we’re waiting for you
 
                                         </p>
@@ -456,24 +468,83 @@
                                         <div class="client_img">
                                             <img src="{{ asset('images/WheatonChicagos.png') }}"
                                                 style="width: 290px ; height: 220px;"
-                                                alt="Wheaton-Chicagos-sam-ice-cream"
-                                                loading="lazy"
-                                                >
+                                                alt="Wheaton-Chicagos-sam-ice-cream" loading="lazy">
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                      <p class="testimonial_text">We’re excited to welcome you! Visit us at our
-                                            location Batavia Chicago – we’re waiting for you
-
-                                        </p>
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Batavia Chicago – we’re waiting for you</p>
                                         <h4 class="client_name">Batavia Chicago</h4>
                                         <div class="client_img">
                                             <img src="{{ asset('images/Batavia.png') }}"
                                                 style="width: 290px ; height: 220px;"
-                                                alt="Batavia Chicago sam ice cream"
-                                                 loading="lazy"
+                                                alt="Batavia Chicago sam ice cream" loading="lazy">
+                                        </div>
+                                    </div>
 
-                                                >
+
+
+
+                                    <div class="carousel-item">
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Glen Ellen Chicago – we’re waiting for you</p>
+                                        <h4 class="client_name">Glen Ellen ice cream truck Chicago</h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/Glen1Ellen.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Batavia Chicago sam ice cream" loading="lazy">
+                                        </div>
+                                    </div>
+ 
+                                    <div class="carousel-item">
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Glendal heights Chicago – we’re waiting for you</p>
+                                        <h4 class="client_name">Glendal heights Chicago ice cream truck </h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/GlendalHeights.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Batavia Chicago sam ice cream" loading="lazy">
+                                        </div>
+                                    </div>
+
+
+
+
+                                    <div class="carousel-item">
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location West Chicago – we’re waiting for you</p>
+                                        <h4 class="client_name">West Chicago ice cream truck </h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/WestChicago.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Batavia Chicago sam ice cream" loading="lazy">
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                    <div class="carousel-item">
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Naperville Chicago – we’re waiting for you</p>
+                                        <h4 class="client_name">Naperville Chicago ice cream truck </h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/Naperville.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Batavia Chicago sam ice cream" loading="lazy">
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-item">
+                                        <p class="testimonial_text">We’re excited to welcome you! Visit us at our
+                                            location Downers Chicago – we’re waiting for you
+                                        </p>
+                                        <h4 class="client_name">Downers Chicago ice cream truck</h4>
+                                        <div class="client_img">
+                                            <img src="{{ asset('images/Downers5.png') }}"
+                                                style="width: 290px ; height: 220px;"
+                                                alt="Downers Chicago Chicago sam ice cream" loading="lazy">
                                         </div>
                                     </div>
                                 </div>
@@ -485,7 +556,7 @@
                                     data-bs-slide="prev">
                                     <i class="fa fa-angle-left"></i>
                                 </a>
-                                <a class="carousel-control-next" data-bs-target="#main_slider" role="button" 
+                                <a class="carousel-control-next" data-bs-target="#main_slider" role="button"
                                     data-bs-slide="next">
                                     <i class="fa fa-angle-right"></i>
                                 </a>
@@ -511,7 +582,8 @@
                         <div class="map-container">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Wheaton-Chicagos-sam-ice-cream">
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                title="Wheaton-Chicagos-sam-ice-cream">
                             </iframe>
                         </div>
                     </div>
@@ -548,8 +620,8 @@
                         </ul>
                     </div>
                     <div class="footer_social_icon about_img">
-                        <img style="width: 100px; height: 100px;" src="{{asset('images/logo2.png')}}"
-                         alt="Chicago ice cream">
+                        <img style="width: 100px; height: 100px;" src="{{ asset('images/logo2.png') }}"
+                            alt="Chicago ice cream">
                     </div>
                 </div>
             </div>
@@ -586,7 +658,7 @@
     <script src="{{ asset('js/plugin.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
     <script src="{{ asset('js/animation22.js') }}"></script>
- 
+
     <script>
         var preloader = document.getElementById("preloader");
         window.addEventListener("load", function() {
@@ -594,9 +666,9 @@
         })
     </script>
 
-@livewireScripts
+    @livewireScripts
 
 
- </body>
+</body>
 
 </html>

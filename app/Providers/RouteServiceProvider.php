@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/sam-ice-creem-truck';
+    public const HOME = '/chicagoSamIceCreamTruck';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -35,7 +35,7 @@ class RouteServiceProvider extends ServiceProvider
                 ->group(base_path('routes/web.php'));
         });
         Route::get('/', function () {
-            return redirect('/sam-ice-creem-truck');
+            return redirect('/chicagoSamIceCreamTruck');
         });
     }
 
