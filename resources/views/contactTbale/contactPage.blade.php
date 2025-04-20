@@ -83,12 +83,12 @@
                             <tr>
                                 <td>{{ $contact->created_at }}</td>
                                 <td>{{ $contact->name }}</td>
-                                <td>
+                                <td > 
 
-                                    <a href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
+                                    <a style="color: blue" href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
                                 </td>
                                 <td>
-                                    <a href="sms:{{ $contact->phone }}">{{ $contact->phone }}</a>
+                                    <a style="color: blue" href="sms:{{ $contact->phone }}">{{ $contact->phone }}</a>
                                     
                                  </td>
                                 <td>{{ $contact->message }}</td>

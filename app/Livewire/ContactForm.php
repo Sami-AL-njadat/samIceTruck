@@ -13,7 +13,7 @@ class ContactForm extends Component
         'name' => 'required|string|max:255',
         'email' => 'required|email',
         'message' => 'required|string|min:10',
-        'phone' => 'required|numeric|digits:10',
+        'phone' => 'required|numeric|digits_between:5,12',
     ];
 
     public function submitForm()
