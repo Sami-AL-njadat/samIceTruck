@@ -74,7 +74,7 @@
                             <a class="nav-link" href="#icecream">Icecream</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#order">Contact Us</a>
+                            <a class="nav-link" href="#order">Contact us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#ellocation">Location</a>

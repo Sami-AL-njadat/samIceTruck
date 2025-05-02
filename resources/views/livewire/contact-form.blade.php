@@ -2,7 +2,7 @@
        <div class="container">
            <div class="row">
                <div class="col-md-6" id="order">
-                   <h1 class="about_taital">Contact Us</h1>
+                   <h1 class="about_taital">Contact us</h1>
 
                    <p class="about_text">Feel free to book and tell us what you’re looking for — we’ll get back to you
                        soon!</p>
