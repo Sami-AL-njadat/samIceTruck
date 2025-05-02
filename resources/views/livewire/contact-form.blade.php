@@ -22,7 +22,7 @@
                            <div class="form-group">
 
                                <input type="text" id="name" wire:model="name" class="email-bt"
-                                   placeholder="Name">
+                                   placeholder="Your Name:">
 
                            </div>
                            <div>
@@ -35,7 +35,7 @@
                            <div class="form-group">
 
                                <input type="email" id="email" wire:model="email" class="email-bt"
-                                   placeholder="Email">
+                                   placeholder="Your Email:">
 
                            </div>
                            <div>
@@ -47,7 +47,7 @@
                            <div class="form-group">
 
                                <input type="phone" id="phone" wire:model="phone" class="email-bt"
-                                   placeholder="Phone">
+                                   placeholder="Your Phone:">
 
                            </div>
                            <div>
@@ -57,7 +57,7 @@
                            </div>
                            <div class="form-group">
 
-                               <textarea id="message" wire:model="message" class="email-bt" placeholder="Message"></textarea>
+                               <textarea id="message" wire:model="message" class="email-bt" placeholder="Tell us about your party details:"></textarea>
 
                            </div>
                            <div>
@@ -70,9 +70,7 @@
 
 
                            <div class="main_bt">
-                               <button class="btn-submit" type="submit" wire:loading.attr="disabled">
-
-                                   Submit
+                               <button class="btn-submit" type="submit" wire:loading.attr="disabled">Send
                                    <img src="{{ asset('images/spinner.gif') }}" alt="Loading..." wire:loading
                                        class="loading-spinner">
 

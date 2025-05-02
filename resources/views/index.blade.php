@@ -612,12 +612,12 @@
                     </div>
 
                     <div class="footer_social_icon">
-                        <ul>
+                        {{-- <ul>
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
+                        </ul> --}}
                     </div>
                     <div class="footer_social_icon about_img">
                         <img style="width: 100px; height: 100px;" src="{{ asset('images/logo2.png') }}"
