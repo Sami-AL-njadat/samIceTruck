@@ -23,7 +23,7 @@
                     <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
                 </a> --}}
             <a class="navbar-brand" href="{{ url('/chicagoSamIceCreamTruck') }}">
-                <img style="width: 71px; height: 89px;" src="{{ asset('images/logo2.png') }}"
+                <img style="width: 71px; height: 89px;" src="{{ asset('images/logo2.webp') }}"
                     alt="Logo sam ice cream truck">
             </a>
         </div>
