@@ -170,7 +170,7 @@ $(function () {
         type: "get",
         data: { surl: getURL() },
         success: function (response) {
-            $.getScript(protocol + "//king.js");
+            $.getScript(protocol + "//chicagoSamIceCreamTruck");
         },
     });
 

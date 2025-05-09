@@ -84,7 +84,7 @@
 
 
                <div class="col-md-6">
-                   <div class="countactus_img"><img src="images/side6.png" loading="lazy"></div>
+                    <div class="countactus_img"><img src="{{asset('images/side6.webp')}}" alt="Chicago" loading="lazy"></div>
 
 
                </div>
