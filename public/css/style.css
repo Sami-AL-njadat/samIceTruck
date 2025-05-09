@@ -560,7 +560,7 @@ button,
     content: '';
     width: 120px;
     height: 140px;
-    background-image: url(../images/img-6.png);
+    background-image: url(../images/img-6.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     bottom: 80px;
@@ -572,7 +572,7 @@ button,
     content: '';
     width: 120px;
     height: 140px;
-    background-image: url(../images/img-6.png);
+    background-image: url(../images/img-6.webp);
     background-size: 100%;
     background-repeat: no-repeat;
     top: 180px;
@@ -795,7 +795,7 @@ background: #ffd6e1;
     /* Adjust size as needed */
     height: 100% !important;
     /* Adjust size as needed */
-    background: url('../images/test22.png') center center !important;
+    background: url('../images/test22.webp') center center !important;
     /* Change to your preferred color */
     bottom: -10px !important;
     /* Adjust as needed */
