@@ -91,7 +91,32 @@
                                     <a style="color: blue" href="sms:{{ $contact->phone }}">{{ $contact->phone }}</a>
                                     
                                  </td>
-                                <td>{{ $contact->message }}</td>
+                                <td>
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageModal{{ $contact->id }}">
+                                        See the message
+                                    </button>
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="messageModal{{ $contact->id }}" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel{{ $contact->id }}" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="messageModalLabel{{ $contact->id }}">Message from {{ $contact->name }}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-dialog modal-dialog-scrollable">
+                                                    {{ $contact->message }}
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
                                 <td>
                                     <button class="btn btn-danger"
                                         onclick="showDeleteConfirmation({{ $contact->id }})">Delete</button>
@@ -110,7 +135,7 @@
     </div>
 
     <!-- Delete Confirmation Modal -->
-    <div id="deleteModal" class="modal" style="display: none;">
+    <div id="deleteModal" class="modal-delete" style="display: none;">
         <div class="modal-content">
             <span class="close" onclick="closeDeleteModal()">&times;</span>
             <h3>Are you sure you want to delete this contact?</h3>

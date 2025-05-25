@@ -124,7 +124,7 @@
                                 <div class="col-sm-6">
                                     <div class="banner_img">
 
-                                        <div class="bordarsmal">
+                                        <div class="bordarsmal">c
                                             <img src="{{ asset('images/side0212.webp') }}" loading="lazy" alt="icecream">
 
                                         </div>

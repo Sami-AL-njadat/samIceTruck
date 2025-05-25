@@ -16,6 +16,9 @@ class ContactController extends Controller
   
         return view('contactTbale.contactPage', compact('contacts'));
     }
+
+
+ 
     /**
      * Show the form for creating a new resource.
      */
