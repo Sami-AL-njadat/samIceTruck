@@ -83,39 +83,46 @@
                             <tr>
                                 <td>{{ $contact->created_at }}</td>
                                 <td>{{ $contact->name }}</td>
-                                <td > 
+                                <td>
 
                                     <a style="color: blue" href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
                                 </td>
                                 <td>
                                     <a style="color: blue" href="sms:{{ $contact->phone }}">{{ $contact->phone }}</a>
-                                    
-                                 </td>
+
+                                </td>
                                 <td>
                                     <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#messageModal{{ $contact->id }}">
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#messageModal{{ $contact->id }}">
                                         See the message
                                     </button>
 
                                     <!-- Modal -->
-                                    <div class="modal fade" id="messageModal{{ $contact->id }}" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel{{ $contact->id }}" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
+                                    <div class="modal fade" id="messageModal{{ $contact->id }}" tabindex="-1"
+                                        role="dialog" aria-labelledby="messageModalLabel{{ $contact->id }}"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-scrollable" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="messageModalLabel{{ $contact->id }}">Message from {{ $contact->name }}</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <h5 class="modal-title" id="messageModalLabel{{ $contact->id }}">
+                                                        Message from {{ $contact->name }}</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close">
                                                         <span aria-hidden="true">&times;</span>
                                                     </button>
                                                 </div>
-                                                <div class="modal-dialog modal-dialog-scrollable">
+                                                <div class="modal-body">
                                                     {{ $contact->message }}
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">Close</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                 </td>
                                 <td>
                                     <button class="btn btn-danger"
@@ -155,6 +162,7 @@
                     href="https://github.com/Sami-AL-njadat"> SAM 95 NJT</a> </p>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
 
     <!-- Optional JavaScript -->
