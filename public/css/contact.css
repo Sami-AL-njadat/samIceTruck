@@ -1,14 +1,9 @@
 /*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
 
- @import url(normalize.css);
+  
+   
+  
  
-@import url(meanmenu.css);
-@import url(owl.carousel.min.css);
- 
-@import url(slick.css);
- 
-@import url(nice-select.css);
-
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -234,7 +229,7 @@ button,
     transition: all .3s ease-in-out;
 }
   
-  .modal-delete {
+  /* .modal-delete {
      display: none;
      position: fixed;
      z-index: 1;
@@ -267,20 +262,23 @@ button,
      color: black;
      text-decoration: none;
      cursor: pointer;
- }
+ } */
 
  /* For responsiveness */
  @media (max-width: 768px) {
-     .modal-content {
+     /* .modal-content {
          width: 90%;
-         /* Adjust modal width for mobile devices */
-     }
+      } */
 
      table {
          width: 100%;
          overflow-x: auto;
          display: block;
      }
+
+         #preloader {
+             background-size: 60%;
+         }
  }
 
  .copyright_section {

@@ -18,12 +18,7 @@ class ContactController extends Controller
     }
 
 
-    public function test()
-    {
-        $contacts = Contact::latest()->paginate(10);
-
-        return view('contactTbale.testpage', compact('contacts'));
-    }
+  
 
 
     /**
@@ -80,6 +75,6 @@ class ContactController extends Controller
             session()->flash('error', ' delete error');
         }
 
-        return redirect()->route('contact.table');
+        return redirect()->route('contact.contactPage');
     }
 }
