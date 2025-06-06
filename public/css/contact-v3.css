@@ -285,16 +285,15 @@
         }
     
         .custom-modal-content {
-            background-color: white;
-            border-radius: 8px;
-            width: 80%;
-            max-width: 600px;
-            max-height: 100vh;
-            overflow: auto;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            animation: customModalFadeIn 0.3s;
-            position: relative !important;
-            scroll-behavior: smooth;
+            background-color: #fefefe;
+                margin: 10% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+                max-width: 600px;
+                border-radius: 5px;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                animation: modalopen 0.3s;
         }
     
         .custom-modal-header {
