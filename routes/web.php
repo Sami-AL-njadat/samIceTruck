@@ -28,8 +28,7 @@ Route::get('/chicagoSamIceCreamTruck', function () {
 
 Route::get('/contact', [ContactController::class, 'index'])->name('contact.table')->middleware('auth');
 Route::get('/contact-v1', [ContactController::class, 'v1'])->name('contact.tablevv1')->middleware('auth');
-Route::get('/contact-v2', [ContactController::class, 'v2'])->name('contact.tablev2')->middleware('auth');
-Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy')->middleware('auth');
+ Route::delete('/contacts/{contact}', [ContactController::class, 'destroy'])->name('contacts.destroy')->middleware('auth');
 
 
 

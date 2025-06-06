@@ -12,7 +12,7 @@
 
  body {
      color: #666666;
-     font-size: 14px;
+     font-size: 15px;
      font-family: 'Poppins', sans-serif;
      line-height: 1.80857;
      font-weight: normal;
@@ -407,6 +407,7 @@ a,
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    font-size: larger;
 }
 
 img {
@@ -497,17 +498,4 @@ button,
 }
 
 
-/* For responsiveness */
-@media (max-width: 768px) {
-    /* .modal-content {
-        width: 90%;
-    } */
-
-    table {
-        width: 100%;
-        overflow-x: auto;
-        display: block;
-    }
-
-
-}
+ 
