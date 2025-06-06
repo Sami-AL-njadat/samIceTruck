@@ -17,6 +17,14 @@ class ContactController extends Controller
         return view('contactTbale.contactPage', compact('contacts'));
     }
 
+    public function test()
+    {
+        $contacts = Contact::latest()->paginate(10);
+
+        return view('contactTbale.test', compact('contacts'));
+    }
+
+
 
     public function v1()
     {

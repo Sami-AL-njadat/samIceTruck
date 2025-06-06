@@ -180,6 +180,7 @@
     animation: modalopen 0.3s;
 }
 
+
 @keyframes modalopen {
     from {
         opacity: 0;
