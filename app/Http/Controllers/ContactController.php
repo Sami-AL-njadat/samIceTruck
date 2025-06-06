@@ -20,7 +20,7 @@ class ContactController extends Controller
 
     public function v1()
     {
-        $contacts = Contact::all();
+        $contacts = Contact::latest()->paginate(10);
 
         return view('contactTbale.v1', compact('contacts'));
     }

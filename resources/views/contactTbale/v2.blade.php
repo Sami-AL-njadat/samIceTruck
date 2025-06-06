@@ -163,5 +163,9 @@
         @endforeach
     };
 </script>
-<script src="{{ asset('js/custom-modals.js') }}"></script></body>
+<script src="{{ asset('js/custom-modals.js') }}"></script>
+
+
+
+</body>
 </html>

@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contact-v3.css') }}">
 
 
     <link rel="icon" href="{{ asset('images/logo2.ico') }}" type="image/x-icon" />
@@ -102,73 +102,59 @@
 
                                     </td>
                                     <td>
-                                        <!-- Button trigger modal -->
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                            data-bs-target="#messageModal{{ $contact->id }}">
-                                           message
+                                        <!-- Button trigger custom modal -->
+                                        <button type="button" class="btn btn-primary" data-custom-toggle="modal"
+                                            data-custom-target="#customMessageModal{{ $contact->id }}">
+                                            message
                                         </button>
-
-                                        <!-- Modal -->
-                                        <div class="modal fade" id="messageModal{{ $contact->id }}" tabindex="-1"
-                                            aria-labelledby="messageModalLabel{{ $contact->id }}" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-scrollable">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title"
-                                                            id="messageModalLabel{{ $contact->id }}">Message from
-                                                            {{ $contact->name }}</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        {{ $contact->message }}
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                            data-bs-dismiss="modal">Close</button>
-                                                    </div>
+                                    
+                                        <!-- Custom Modal -->
+                                        <div class="custom-modal" id="customMessageModal{{ $contact->id }}">
+                                            <div class="custom-modal-content custom-modal-scrollable">
+                                                <div class="custom-modal-header">
+                                                    <h5 class="custom-modal-title">Message from {{ $contact->name }}</h5>
+                                                    <button type="button" class="custom-modal-close">&times;</button>
+                                                </div>
+                                                <div class="custom-modal-body">
+                                                    {{ $contact->message }}
+                                                </div>
+                                                <div class="custom-modal-footer">
+                                                    <button type="button" class="custom-modal-btn custom-modal-btn-secondary" 
+                                                        onclick="document.getElementById('customMessageModal{{ $contact->id }}').classList.remove('show'); document.body.style.overflow = ''">
+                                                        Close
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
                                     </td>
-
-
-
-
+                                    
                                     <td>
-                                        <!-- Delete Button Triggering Modal -->
-                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                            data-bs-target="#deleteModal{{ $contact->id }}">
+                                        <!-- Delete Button Triggering Custom Modal -->
+                                        <button type="button" class="btn btn-danger" data-custom-toggle="modal"
+                                            data-custom-target="#customDeleteModal{{ $contact->id }}">
                                             Delete
                                         </button>
-
-                                        <!-- Delete Modal -->
-                                        <div class="modal fade" id="deleteModal{{ $contact->id }}" tabindex="-1"
-                                            aria-labelledby="deleteModalLabel{{ $contact->id }}" aria-hidden="true">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title"
-                                                            id="deleteModalLabel{{ $contact->id }}">Confirm Delete
-                                                        </h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Are you sure you want to delete this contact
-                                                        ({{ $contact->name }})?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <form action="{{ route('contacts.destroy', $contact->id) }}"
-                                                            method="POST">
-                                                            @csrf
-                                                            @method('DELETE')
-                                                            <button type="submit" class="btn btn-danger">Yes,
-                                                                Delete</button>
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Cancel</button>
-                                                        </form>
-                                                    </div>
+                                    
+                                        <!-- Custom Delete Modal -->
+                                        <div class="custom-modal" id="customDeleteModal{{ $contact->id }}">
+                                            <div class="custom-modal-content">
+                                                <div class="custom-modal-header">
+                                                    <h5 class="custom-modal-title">Confirm Delete</h5>
+                                                    <button type="button" class="custom-modal-close">&times;</button>
+                                                </div>
+                                                <div class="custom-modal-body">
+                                                    Are you sure you want to delete this contact ({{ $contact->name }})?
+                                                </div>
+                                                <div class="custom-modal-footer">
+                                                    <form action="{{ route('contacts.destroy', $contact->id) }}" method="POST">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="custom-modal-btn custom-modal-btn-danger">Yes, Delete</button>
+                                                        <button type="button" class="custom-modal-btn custom-modal-btn-secondary" 
+                                                            onclick="document.getElementById('customDeleteModal{{ $contact->id }}').classList.remove('show'); document.body.style.overflow = ''">
+                                                            Cancel
+                                                        </button>
+                                                    </form>
                                                 </div>
                                             </div>
                                         </div>
@@ -181,7 +167,9 @@
                         </tbody>
                     </table>
                 </div>
-
+                <div class="pagination">
+                    {{ $contacts->links() }}
+                </div>
                
             @endif
         </div>
@@ -205,6 +193,10 @@
     </script>
 
  
+<script src="{{ asset('js/modeljscustom.js') }}"></script>
+ 
+
+</body>
 
 
  
