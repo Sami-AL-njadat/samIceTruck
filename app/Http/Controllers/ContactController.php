@@ -18,6 +18,21 @@ class ContactController extends Controller
     }
 
 
+    public function v1()
+    {
+        $contacts = Contact::all();
+
+        return view('contactTbale.v1', compact('contacts'));
+    }
+
+
+    public function v2()
+    {
+        $contacts = Contact::all();
+
+        return view('contactTbale.v2', compact('contacts'));
+    }
+
   
 
 
@@ -75,6 +90,6 @@ class ContactController extends Controller
             session()->flash('error', ' delete error');
         }
 
-        return redirect()->route('contact.contactPage');
+        return redirect()->route('contact.table');
     }
 }

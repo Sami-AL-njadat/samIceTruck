@@ -182,10 +182,7 @@
                     </table>
                 </div>
 
-                <!-- Pagination Links -->
-                <div class="pagination">
-                    {{ $contacts->links() }}
-                </div>
+               
             @endif
         </div>
 

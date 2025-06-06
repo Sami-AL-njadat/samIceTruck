@@ -1,0 +1,246 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    max-height: 89px;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+/* Table styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+    background-color: #f8f9fa;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Alert styles */
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.alert-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.75rem 1.25rem;
+    color: inherit;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+/* Modal styles */
+.custom-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation: modalopen 0.3s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-header {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    margin: 0;
+}
+
+.modal-close {
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.modal-close:hover {
+    color: black;
+}
+
+.modal-body {
+    padding: 20px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.modal-footer {
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .modal-content {
+        width: 95%;
+        margin: 20% auto;
+    }
+}
