@@ -209,20 +209,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 
-<script>
-
-document.addEventListener('show.bs.modal', function() {
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${window.scrollY}px`;
-});
-
-document.addEventListener('hidden.bs.modal', function() {
-    const scrollY = document.body.style.top;
-    document.body.style.position = '';
-    document.body.style.top = '';
-    window.scrollTo(0, parseInt(scrollY || '0') * -1);
-});
-</script>
+ 
  
 </body>
 
