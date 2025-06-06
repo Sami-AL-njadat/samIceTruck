@@ -224,10 +224,7 @@
 
     /* For responsiveness */
     @media (max-width: 768px) {
-        /* .modal-content {
-            width: 90%;
-            max-height: 100vh;
-        } */
+   
 
         table {
             width: 100%;
@@ -280,6 +277,7 @@
             z-index: 1050;
             justify-content: center;
             align-items: center;
+            overflow-y: auto;
         }
     
         .custom-modal.show {
@@ -295,6 +293,8 @@
             overflow: auto;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
             animation: customModalFadeIn 0.3s;
+            position: relative !important;
+            scroll-behavior: smooth;
         }
     
         .custom-modal-header {
