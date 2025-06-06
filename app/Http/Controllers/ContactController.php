@@ -17,10 +17,9 @@ class ContactController extends Controller
         return view('contactTbale.contactPage', compact('contacts'));
     }
 
-  
-
  
 
+  
   
 
 
@@ -73,9 +72,9 @@ class ContactController extends Controller
             $contact = Contact::findOrFail($id);
             $contact->delete();
 
-            session()->flash('success', 'delete success');
+            session()->flash('success', 'The message delete successfully');
         } catch (\Exception $e) {
-            session()->flash('error', ' delete error');
+            session()->flash('error', ' The message delete error');
         }
 
         return redirect()->route('contact.table');
