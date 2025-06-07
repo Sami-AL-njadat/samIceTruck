@@ -582,12 +582,13 @@
                         <h1 class="contact_taital maps">Meet us</h1>
                         <div class="map-container">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380511.58486109035!2d-88.06153032415246!3d41.833750983111194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sjo!4v1741814496501!5m2!1sen!2sjo"
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2971.564050430232!2d-88.1174022!3d41.859209400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e5516997b8321%3A0xb6bbb17c02eecec4!2sWheaton%20ice%20cream%20truck!5e0!3m2!1sen!2sjo!4v1749309039518!5m2!1sen!2sjo"                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 title="Wheaton-Chicagos-sam-ice-cream">
                             </iframe>
                         </div>
-                    </div>
+
+
+                     </div>
                 </div>
                 <div class="col-md-8">
                     <div class="location_text">
